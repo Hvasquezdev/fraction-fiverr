@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+// Customization
+
+// Importing the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// Setting up initial variables
+
+$orange: #FD2F05;
+
+// Update the sans-serif font family
+$family-sans-serif: 'Montserrat', sans-serif;
+
+// Set derived variables
+$primary: $orange;
+
+// Importing the rest of Bulma
+@import "../node_modules/bulma/bulma";
+
+@media screen and (min-width: 1550px) {
+	.container {
+	  max-width: 1520px;
+	}
+}
+
+.orange-button-outlined {
+	border: 2px solid $primary;
+	min-height: 60px !important;
+	font-size: 18px;
+	font-weight: 500;
+	background-color: transparent;
+	padding: 20px 50px 15px 30px !important;
+	color: $primary !important;
+
+	span {
+		background-color: #f7d4d7;
+		transition-duration: .2s;
+	}
+	
+	&:hover {
+		border-color: $primary !important;
+
+		span {
+			color: $primary !important;
+			background-color: transparent;		
+		}
+	}
+}
+
+header {
+	position: absolute;
+	width: 100%;
+	top: 58px;
+
+	.navbar {
+		.navbar-start {
+			align-items: center;
+
+			.navbar-item {
+				max-height: 18px;
+				padding-top: 0;
+				padding-bottom: 0;
+				background: #EDEDEDD9;
+				padding: 0;
+				font-size: 9.7px;
+				font-weight: 500;
+				transition-duration: .2s;
+
+				&:not(:last-child) {
+					margin-right: 60px;
+				}
+
+				&:first-child {
+					margin-left: 55px;
+				}
+			}
+		}
+
+		.navbar-end {
+			.contact-button {
+				border: 2px solid #fff;
+				min-height: 35px;
+				font-size: 9.7px;
+				font-weight: 500;
+				background-color: transparent;
+				padding: 9.5px 36.7px 6.5px 22.3px;
+
+				span {
+					background-color: #EDEDEDD9;
+					transition-duration: .2s;
+				}
+
+				&:hover span{
+					color: #fff !important;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+.hero {
+  clip-path: polygon(0 0, 0 100%, 380% 0);
+  min-height: 945px !important;
+
+	.hero-body {
+		align-items: flex-start !important;
+		padding-top: 160px;
+
+		.container {
+			.title {
+				font-size: 60.5px;
+				font-weight: 500;
+				line-height: 1.22;
+				padding-bottom: 25px;
+
+				span {
+					background: #EDEDEDD9;
+					padding-right: 10px;
+				}
+			}
+
+			.subtitle {
+				font-size: 15pxpx;
+				font-weight: 500;
+				line-height: 30px;
+
+				span {
+					background: #EDEDEDD9;
+					padding-right: 10px;
+				}
+			}
+
+			.signup-button {
+				border: 2px solid #fff;
+				min-height: 52px;
+				font-size: 14px;
+				font-weight: 500;
+				background-color: transparent;
+				padding: 18px 43px 15px 25px;
+
+				span {
+					background-color: #EDEDEDD9;
+					transition-duration: .2s;
+				}
+
+				&:hover span{
+					color: #fff !important;
+					background-color: transparent;
+				}
+			}
+		}
+
+		.banner-image {
+			position: absolute;
+			width: 100%;
+			max-width: 1020px;
+			right: -5px;
+		}
+	}
+}
+
+.adding-a-button {
+	margin-top: -40px;
+
+	.container {
+		display: flex;
+
+		.phone-image {
+			margin-top: -260px;
+			margin-left: -145px;
+		}
+
+		.tablet-image {
+			margin-top: -200px;
+			margin-left: -110px;
+		}
+
+		.text-content {
+			padding-left: 60px;
+
+			.title {
+				font-size: 45px;
+				font-weight: 500;
+				padding-bottom: 40px;
+
+				span {
+					background-color: #f7d4d7;
+					
+					&:first-child {
+						padding-right: 10px;
+					}
+				}
+			}
+
+			.subtitle {
+				font-size: 17.9px;
+				font-weight: 500;
+				color: #445875;
+				line-height: 30px;
+
+				span {
+					background-color: #f7d4d7;
+
+					&:not(:last-child) {
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
