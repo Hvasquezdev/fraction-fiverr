@@ -11,7 +11,7 @@ The `npm` dependencies included in `package.json` are:
 
 Apart from `package.json`, the following files are included:
 
-* `.babelrc` configuration file for [Babel](https://babeljs.io/)
+* `.babel.config.js` configuration file for [Babel](https://babeljs.io/)
 * `.gitignore` common [Git](https://git-scm.com/) ignored files
 * `index.html` this HTML5 file
 * `_sass/main.scss` a basic SCSS file that **imports Bulma** and explains how to **customize** your styles, and compiles to `css/main.css`
