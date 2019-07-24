@@ -8,10 +8,10 @@
   "deprecated": false,
   "description": "Fraction Landing Page",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.4.7",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-ie": "^6.7.0",
     "bulma": "^0.7.5",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
@@ -36,8 +36,12 @@
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
+    "js-build": "./node_modules/.bin/babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "embla-carousel": "^2.3.2"
   }
 }

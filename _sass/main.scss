@@ -24,21 +24,21 @@ $primary: $orange;
 	}
 }
 
-.orange-button-outlined {
-	border: 2px solid $primary;
+.button-outlined {
+	border: 2px solid;
 	min-height: 60px !important;
 	font-size: 18px;
 	font-weight: 500;
 	background-color: transparent;
 	padding: 20px 50px 15px 30px !important;
-	color: $primary !important;
+	color: $primary;
 
 	span {
 		background-color: #f7d4d7;
 		transition-duration: .2s;
 	}
 	
-	&:hover {
+	&.orange-hover:hover {
 		border-color: $primary !important;
 
 		span {
@@ -46,6 +46,23 @@ $primary: $orange;
 			background-color: transparent;		
 		}
 	}
+	
+	&.white-hover:hover {
+		border-color: #fff !important;
+
+		span {
+			color: #fff !important;
+			background-color: transparent;		
+		}
+	}
+}
+
+.orange-outlined {
+	border-color: $primary;
+}
+
+.white-outlined {
+	border-color: #fff;
 }
 
 header {
@@ -209,5 +226,149 @@ header {
 				}
 			}
 		}
+	}
+}
+
+
+.embla {
+	position: relative;
+	padding-top: 100px;
+
+
+	.embla__viewport {
+		width: 100%;
+		overflow: hidden;
+
+		.is-draggable {
+			cursor: move;
+			cursor: grab;
+		}
+
+		.is-dragging {
+			cursor: grabbing;
+		}
+
+		.embla__container {
+			display: flex;
+			will-change: transform;
+			height: 500px;
+
+			.embla__slide {
+				flex: 0 0 auto;
+				min-width: 1182px;
+			
+				&:not(:first-child) {
+					padding-left: 82px;
+				}
+			
+				&:not(:last-child) {
+					padding-right: 82px;
+				}
+			
+				.embla__slide__inner {
+					width: 100%;
+					min-width: 1182px;
+					max-width: 1182px;
+					height: 450px;
+					background-color: $primary;
+					border-radius: 25px;
+					position: relative;
+				
+					&:after {
+						content:'';
+						position: absolute;
+						top: 100%;
+						left: 195px;
+						width: 0;
+						height: 0;
+						border-top: solid 45px $primary;
+						border-left: solid 45px transparent;
+						border-right: solid 45px transparent;
+					}
+				
+					.card-percent-overlay {
+						background-image: url('../assets/svg/review-percent.svg');
+						background-position: right center;
+						background-repeat: no-repeat;
+						position: absolute;
+						height: 100%;
+						max-height: 425px;
+						width: 263px;
+						right: 34px;
+						top: 65px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+				
+						.button {
+							margin-bottom: -75px;
+						}
+					}
+				
+					.card-content {
+						padding-left: 165px;
+						padding-top: 88px;
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+				
+						.review-text {
+							font-size: 45px;
+							font-weight: 500;
+							color: #fff;
+							line-height: 1.2;
+							text-align: center;
+				
+							span {
+								background-color: #f7d4d7;
+								padding-right: 10px;
+							}
+						}
+				
+						.review-author {
+							display: flex;
+							align-items: center;
+							padding-top: 36px;
+				
+							img {
+								width: 62px;
+								height: 62px;
+								border-radius: 50%;
+								background: #000;
+								border: 2px solid #fff;
+								margin-right: 55px;
+							}
+				
+							.review-author__name {
+								font-size: 20.5px;
+								font-weight: 500;
+								color: #fff;
+								background-color: #f7d4d7;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.embla__button {
+		background-color: transparent;
+		position: absolute;
+		border: 0;
+		width: 112px;
+		height: 112px;
+		cursor: pointer;
+		padding: 0;
+	}
+	
+	.embla__button--prev {
+		left: 40px;
+		bottom: 120px;
+	}
+	
+	.embla__button--next {
+		right: 40px;
+		bottom: 120px;
 	}
 }

@@ -6960,22 +6960,33 @@ label.panel-block {
   .container {
     max-width: 1520px; } }
 
-.orange-button-outlined {
-  border: 2px solid #FD2F05;
+.button-outlined {
+  border: 2px solid;
   min-height: 60px !important;
   font-size: 18px;
   font-weight: 500;
   background-color: transparent;
   padding: 20px 50px 15px 30px !important;
-  color: #FD2F05 !important; }
-  .orange-button-outlined span {
+  color: #FD2F05; }
+  .button-outlined span {
     background-color: #f7d4d7;
     transition-duration: .2s; }
-  .orange-button-outlined:hover {
+  .button-outlined.orange-hover:hover {
     border-color: #FD2F05 !important; }
-    .orange-button-outlined:hover span {
+    .button-outlined.orange-hover:hover span {
       color: #FD2F05 !important;
       background-color: transparent; }
+  .button-outlined.white-hover:hover {
+    border-color: #fff !important; }
+    .button-outlined.white-hover:hover span {
+      color: #fff !important;
+      background-color: transparent; }
+
+.orange-outlined {
+  border-color: #FD2F05; }
+
+.white-outlined {
+  border-color: #fff; }
 
 header {
   position: absolute;
@@ -7079,3 +7090,104 @@ header {
           background-color: #f7d4d7; }
           .adding-a-button .container .text-content .subtitle span:not(:last-child) {
             padding-right: 10px; }
+
+.embla {
+  position: relative;
+  padding-top: 100px; }
+  .embla .embla__viewport {
+    width: 100%;
+    overflow: hidden; }
+    .embla .embla__viewport .is-draggable {
+      cursor: move;
+      cursor: grab; }
+    .embla .embla__viewport .is-dragging {
+      cursor: grabbing; }
+    .embla .embla__viewport .embla__container {
+      display: flex;
+      will-change: transform;
+      height: 500px; }
+      .embla .embla__viewport .embla__container .embla__slide {
+        flex: 0 0 auto;
+        min-width: 1182px; }
+        .embla .embla__viewport .embla__container .embla__slide:not(:first-child) {
+          padding-left: 82px; }
+        .embla .embla__viewport .embla__container .embla__slide:not(:last-child) {
+          padding-right: 82px; }
+        .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+          width: 100%;
+          min-width: 1182px;
+          max-width: 1182px;
+          height: 450px;
+          background-color: #FD2F05;
+          border-radius: 25px;
+          position: relative; }
+          .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 195px;
+            width: 0;
+            height: 0;
+            border-top: solid 45px #FD2F05;
+            border-left: solid 45px transparent;
+            border-right: solid 45px transparent; }
+          .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
+            background-image: url("../assets/svg/review-percent.svg");
+            background-position: right center;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            max-height: 425px;
+            width: 263px;
+            right: 34px;
+            top: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
+              margin-bottom: -75px; }
+          .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
+            padding-left: 165px;
+            padding-top: 88px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; }
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
+              font-size: 45px;
+              font-weight: 500;
+              color: #fff;
+              line-height: 1.2;
+              text-align: center; }
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text span {
+                background-color: #f7d4d7;
+                padding-right: 10px; }
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author {
+              display: flex;
+              align-items: center;
+              padding-top: 36px; }
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                background: #000;
+                border: 2px solid #fff;
+                margin-right: 55px; }
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
+                font-size: 20.5px;
+                font-weight: 500;
+                color: #fff;
+                background-color: #f7d4d7; }
+  .embla .embla__button {
+    background-color: transparent;
+    position: absolute;
+    border: 0;
+    width: 112px;
+    height: 112px;
+    cursor: pointer;
+    padding: 0; }
+  .embla .embla__button--prev {
+    left: 40px;
+    bottom: 120px; }
+  .embla .embla__button--next {
+    right: 40px;
+    bottom: 120px; }
