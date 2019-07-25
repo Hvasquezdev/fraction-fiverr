@@ -6960,6 +6960,12 @@ label.panel-block {
   .container {
     max-width: 1520px; } }
 
+.has-padding-bottom-2-desktop {
+  padding-bottom: 20px; }
+
+.has-padding-bottom-4-desktop {
+  padding-bottom: 40px; }
+
 .button-outlined {
   border: 2px solid;
   min-height: 60px !important;
@@ -6991,7 +6997,8 @@ label.panel-block {
 header {
   position: absolute;
   width: 100%;
-  top: 58px; }
+  top: 40px;
+  padding: 0 40px; }
   header .navbar .navbar-start {
     align-items: center; }
     header .navbar .navbar-start .navbar-item {
@@ -7026,7 +7033,7 @@ header {
   min-height: 945px !important; }
   .hero .hero-body {
     align-items: flex-start !important;
-    padding-top: 160px; }
+    padding-top: 142px; }
     .hero .hero-body .container .title {
       font-size: 60.5px;
       font-weight: 500;
@@ -7191,3 +7198,99 @@ header {
   .embla .embla__button--next {
     right: 40px;
     bottom: 120px; }
+
+.companies {
+  padding-top: 50px; }
+  .companies .companies-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 890px; }
+    .companies .companies-list .first-row {
+      padding-bottom: 20px; }
+    .companies .companies-list .first-row,
+    .companies .companies-list .second-row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .companies .companies-list .company-item {
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: .25rem 2rem;
+      min-height: 80px;
+      text-align: center;
+      color: #adcfff;
+      transition-duration: .2s; }
+      .companies .companies-list .company-item:first-child {
+        margin-left: 0; }
+      .companies .companies-list .company-item:last-child {
+        margin-right: 0; }
+      .companies .companies-list .company-item:hover {
+        color: #FD2F05; }
+      .companies .companies-list .company-item svg {
+        max-width: 125px; }
+
+.get-your-offer {
+  padding-top: 190px; }
+  .get-your-offer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .get-your-offer .container .text-content {
+      padding-right: 90px; }
+      .get-your-offer .container .text-content .title {
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 35px; }
+        .get-your-offer .container .text-content .title span {
+          background-color: #f7d4d7; }
+          .get-your-offer .container .text-content .title span:not(:last-child) {
+            padding-right: 10px; }
+      .get-your-offer .container .text-content p {
+        font-size: 17.9px;
+        font-weight: 500;
+        color: #445875;
+        line-height: 30px; }
+        .get-your-offer .container .text-content p span {
+          background-color: #f7d4d7; }
+          .get-your-offer .container .text-content p span:not(:last-child) {
+            padding-right: 10px; }
+    .get-your-offer .container .media-content {
+      max-width: 850px; }
+
+.bold-promise {
+  padding-top: 80px; }
+  .bold-promise .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bold-promise .container .text-content {
+      padding-right: 90px;
+      align-self: self-end;
+      padding-bottom: 35px; }
+      .bold-promise .container .text-content .title {
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 35px; }
+        .bold-promise .container .text-content .title span {
+          background-color: #f7d4d7; }
+          .bold-promise .container .text-content .title span:not(:last-child) {
+            padding-right: 10px; }
+      .bold-promise .container .text-content p {
+        font-size: 17.9px;
+        font-weight: 500;
+        color: #445875;
+        line-height: 30px; }
+        .bold-promise .container .text-content p span {
+          background-color: #f7d4d7; }
+          .bold-promise .container .text-content p span:not(:last-child) {
+            padding-right: 10px; }
+    .bold-promise .container .media-content {
+      max-width: 850px; }
