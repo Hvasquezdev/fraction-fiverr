@@ -62,6 +62,14 @@ $primary: $orange;
 			background-color: transparent;		
 		}
 	}
+	&.white-hover-unraised:hover {
+		border-color: $primary !important;
+
+		span {
+			color: #fff !important;
+			background-color: transparent;		
+		}
+	}
 }
 
 .orange-outlined {
@@ -135,7 +143,7 @@ header {
 
 		.container {
 			.title {
-				font-size: 60.5px;
+				font-size: 64.5px;
 				font-weight: 500;
 				line-height: 1.22;
 				padding-bottom: 25px;
@@ -528,6 +536,105 @@ header {
 
 		.media-content {
 			max-width: 850px;
+		}
+	}
+}
+
+.try-it {
+	padding-top: 190px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.title-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.title {
+				font-size: 64.5px;
+				font-weight: 500;
+				background-color: #f7d4d7;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 17.9px;
+				font-weight: 500;
+				color: #445875;
+				line-height: 25px;
+
+				span {
+					background-color: #f7d4d7;
+
+					&:not(:last-child) {
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+
+		.media-content {
+			padding-top: 90px;
+			display: flex;
+
+			.media-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+
+				&:not(:last-child) {
+					padding-right: 70px;
+				}
+			}
+
+			.media-item-form {
+				form {
+					max-width: 300px;
+
+					.field {
+						margin-bottom: 25px;
+
+						&.image-field {
+							padding-top: 15px;
+						}
+
+						.control {
+							&.image-control {
+								border: 2px solid $primary;
+								border-radius: 18px;
+								min-height: 210px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								img {
+									max-width: 45px;
+								}
+							}
+
+							input {
+								border-width: 2px;
+								padding: 12.25 30px;
+								font-size: 23.5px;
+								font-weight: 500;
+								color: $primary;
+
+								&::placeholder,
+								&::-moz-placeholder,
+								&::-webkit-input-placeholder {
+									color: $primary;
+									opacity: .8;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
