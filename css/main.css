@@ -6999,6 +6999,11 @@ label.panel-block {
 .white-outlined {
   border-color: #fff; }
 
+@media screen and (min-width: 1150px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
 header {
   position: absolute;
   width: 100%;
@@ -7033,75 +7038,283 @@ header {
       color: #fff !important;
       background-color: transparent; }
 
-.hero-banner {
-  clip-path: polygon(0 0, 0 100%, 380% 0);
-  min-height: 945px !important; }
-  .hero-banner .hero-body {
-    align-items: flex-start !important;
-    padding-top: 142px; }
-    .hero-banner .hero-body .container .title {
-      font-size: 64.5px;
-      font-weight: 500;
-      line-height: 1.22;
-      padding-bottom: 25px; }
-      .hero-banner .hero-body .container .title span {
-        background: #EDEDEDD9;
-        padding-right: 10px; }
-    .hero-banner .hero-body .container .subtitle {
-      font-size: 15pxpx;
-      font-weight: 500;
-      line-height: 30px; }
-      .hero-banner .hero-body .container .subtitle span {
-        background: #EDEDEDD9;
-        padding-right: 10px; }
-    .hero-banner .hero-body .container .signup-button {
-      border: 2px solid #fff;
-      min-height: 52px;
-      font-size: 14px;
-      font-weight: 500;
-      background-color: transparent;
-      padding: 18px 43px 15px 25px; }
-      .hero-banner .hero-body .container .signup-button span {
-        background-color: #EDEDEDD9;
-        transition-duration: .2s; }
-      .hero-banner .hero-body .container .signup-button:hover span {
-        color: #fff !important;
-        background-color: transparent; }
-    .hero-banner .hero-body .banner-image {
-      position: absolute;
-      width: 100%;
-      max-width: 1020px;
-      right: -5px; }
+@media screen and (min-width: 320px) {
+  .hero-banner {
+    clip-path: polygon(0 0, 0 100%, 1880% 0);
+    min-height: 780px !important; } }
+
+@media screen and (min-width: 440px) {
+  .hero-banner {
+    min-height: 840px !important; } }
+
+@media screen and (min-width: 540px) {
+  .hero-banner {
+    min-height: 890px !important; } }
+
+@media screen and (min-width: 650px) {
+  .hero-banner {
+    min-height: 945px !important; } }
+
+@media screen and (min-width: 768px) {
+  .hero-banner {
+    min-height: 1040px !important; } }
+
+@media screen and (min-width: 850px) {
+  .hero-banner {
+    min-height: 1100px !important; } }
+
+@media screen and (min-width: 950px) {
+  .hero-banner {
+    min-height: 1150px !important; } }
+
+@media screen and (min-width: 1060px) {
+  .hero-banner {
+    min-height: 1200px !important; } }
+
+@media screen and (min-width: 1150px) {
+  .hero-banner {
+    clip-path: polygon(0 0, 0 100%, 380% 0);
+    min-height: 800px !important; } }
+
+@media screen and (min-width: 1150px) {
+  .hero-banner {
+    clip-path: polygon(0 0, 0 100%, 380% 0);
+    min-height: 850px !important; } }
+
+@media screen and (min-width: 1500px) {
+  .hero-banner {
+    min-height: 945px !important; } }
+
+.hero-banner .hero-body {
+  align-items: flex-start !important;
+  padding-top: 142px; }
+  @media screen and (min-width: 320px) {
+    .hero-banner .hero-body {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (min-width: 1150px) {
+    .hero-banner .hero-body {
+      flex-direction: row; } }
+  .hero-banner .hero-body .container .title {
+    font-weight: 500;
+    line-height: 1.22; }
+    .hero-banner .hero-body .container .title span {
+      background: #EDEDEDD9;
+      padding-right: 10px; }
+    @media screen and (min-width: 320px) {
+      .hero-banner .hero-body .container .title {
+        font-size: 27px;
+        text-align: center;
+        max-width: 200px;
+        padding-bottom: 5.5px; } }
+    @media screen and (min-width: 768px) {
+      .hero-banner .hero-body .container .title {
+        font-size: 32px;
+        max-width: unset;
+        padding-bottom: 10.5px; } }
+    @media screen and (min-width: 1150px) {
+      .hero-banner .hero-body .container .title {
+        text-align: left; } }
+    @media screen and (min-width: 1500px) {
+      .hero-banner .hero-body .container .title {
+        font-size: 64.5px;
+        padding-bottom: 25px; } }
+  .hero-banner .hero-body .container .subtitle {
+    font-weight: 500; }
+    .hero-banner .hero-body .container .subtitle span {
+      background: #EDEDEDD9;
+      padding-right: 10px; }
+    @media screen and (min-width: 320px) {
+      .hero-banner .hero-body .container .subtitle {
+        font-size: 10.5px;
+        text-align: center;
+        max-width: 200px;
+        line-height: 18px; }
+        .hero-banner .hero-body .container .subtitle span:first-child {
+          margin-right: -5px; }
+        .hero-banner .hero-body .container .subtitle br {
+          display: none; } }
+    @media screen and (min-width: 768px) {
+      .hero-banner .hero-body .container .subtitle {
+        font-size: 15.5px;
+        max-width: unset;
+        line-height: 24px; }
+        .hero-banner .hero-body .container .subtitle span:first-child {
+          margin-right: 0; }
+        .hero-banner .hero-body .container .subtitle br {
+          display: block; } }
+    @media screen and (min-width: 1150px) {
+      .hero-banner .hero-body .container .subtitle {
+        text-align: left; } }
+    @media screen and (min-width: 1500px) {
+      .hero-banner .hero-body .container .subtitle {
+        font-size: 20px;
+        line-height: 30px; } }
+  .hero-banner .hero-body .container .signup-button {
+    border: 2px solid #fff;
+    min-height: 52px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 18px 43px 15px 25px; }
+    .hero-banner .hero-body .container .signup-button span {
+      background-color: #EDEDEDD9;
+      transition-duration: .2s; }
+    .hero-banner .hero-body .container .signup-button:hover span {
+      color: #fff !important;
+      background-color: transparent; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .hero-banner .hero-body .container .signup-button {
+        font-size: 10.25px;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        min-height: 42px !important;
+        padding-left: 16px !important;
+        padding-right: 26px !important; } }
+  @media screen and (min-width: 320px) {
+    .hero-banner .hero-body .container {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      order: 2; } }
+  @media screen and (min-width: 1150px) {
+    .hero-banner .hero-body .container {
+      padding-top: 20px;
+      align-items: flex-start;
+      order: 1; } }
+  .hero-banner .hero-body .banner-image {
+    width: 100%;
+    max-width: 1020px;
+    right: -5px; }
+    @media screen and (min-width: 320px) {
+      .hero-banner .hero-body .banner-image {
+        position: relative; } }
+    @media screen and (min-width: 1150px) {
+      .hero-banner .hero-body .banner-image {
+        position: absolute;
+        max-width: 700px; } }
+    @media screen and (min-width: 1250px) {
+      .hero-banner .hero-body .banner-image {
+        max-width: 800px; } }
+    @media screen and (min-width: 1350px) {
+      .hero-banner .hero-body .banner-image {
+        max-width: 860px; } }
 
 .adding-a-button {
   margin-top: -40px; }
   .adding-a-button .container {
     display: flex; }
+    @media screen and (min-width: 320px) {
+      .adding-a-button .container {
+        flex-direction: column; } }
+    @media screen and (min-width: 1500px) {
+      .adding-a-button .container {
+        flex-direction: row; } }
     .adding-a-button .container .phone-image {
       margin-top: -260px;
       margin-left: -145px; }
-    .adding-a-button .container .tablet-image {
-      margin-top: -200px;
-      margin-left: -110px; }
+      @media screen and (min-width: 320px) {
+        .adding-a-button .container .phone-image {
+          display: none; } }
+      @media screen and (min-width: 1500px) {
+        .adding-a-button .container .phone-image {
+          display: block;
+          flex-shrink: 0; } }
+    @media screen and (min-width: 320px) {
+      .adding-a-button .container .tablet-image {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -100px;
+        padding: 0 15px; } }
+    @media screen and (min-width: 768px) {
+      .adding-a-button .container .tablet-image {
+        margin-top: -150px; } }
+    @media screen and (min-width: 1150px) {
+      .adding-a-button .container .tablet-image {
+        margin-top: -220px; } }
+    @media screen and (min-width: 1500px) {
+      .adding-a-button .container .tablet-image {
+        max-width: unset;
+        margin-top: -200px;
+        margin-left: -110px;
+        margin-right: 0;
+        padding: 0;
+        flex-shrink: 0; } }
     .adding-a-button .container .text-content {
       padding-left: 60px; }
+      @media screen and (min-width: 320px) and (max-width: 1499px) {
+        .adding-a-button .container .text-content {
+          padding: 0;
+          margin: auto;
+          padding-left: 45px;
+          padding-right: 45px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
       .adding-a-button .container .text-content .title {
-        font-size: 45px;
-        font-weight: 500;
-        padding-bottom: 40px; }
+        font-weight: 500; }
         .adding-a-button .container .text-content .title span {
           background-color: #f7d4d7; }
           .adding-a-button .container .text-content .title span:first-child {
             padding-right: 10px; }
+        @media screen and (min-width: 320px) {
+          .adding-a-button .container .text-content .title {
+            font-size: 27.25px;
+            text-align: center;
+            padding-bottom: 10px; } }
+        @media screen and (min-width: 768px) {
+          .adding-a-button .container .text-content .title {
+            font-size: 32px; } }
+        @media screen and (min-width: 1500px) {
+          .adding-a-button .container .text-content .title {
+            font-size: 32px;
+            font-size: 45px;
+            text-align: left;
+            padding-bottom: 40px;
+            line-height: 55px; } }
       .adding-a-button .container .text-content .subtitle {
-        font-size: 17.9px;
         font-weight: 500;
-        color: #445875;
-        line-height: 30px; }
+        color: #445875; }
         .adding-a-button .container .text-content .subtitle span {
           background-color: #f7d4d7; }
           .adding-a-button .container .text-content .subtitle span:not(:last-child) {
             padding-right: 10px; }
+        @media screen and (min-width: 320px) {
+          .adding-a-button .container .text-content .subtitle {
+            text-align: center;
+            font-size: 10px;
+            line-height: 20px;
+            max-width: 250px; }
+            .adding-a-button .container .text-content .subtitle br {
+              display: none; } }
+        @media screen and (min-width: 768px) {
+          .adding-a-button .container .text-content .subtitle {
+            font-size: 15px;
+            line-height: 25px;
+            max-width: unset; }
+            .adding-a-button .container .text-content .subtitle br {
+              display: block; } }
+        @media screen and (min-width: 1500px) {
+          .adding-a-button .container .text-content .subtitle {
+            font-size: 17.9px;
+            line-height: 30px;
+            text-align: left; }
+            .adding-a-button .container .text-content .subtitle br {
+              display: none; } }
+        @media screen and (min-width: 1550px) {
+          .adding-a-button .container .text-content .subtitle br {
+            display: block; } }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .adding-a-button .container .text-content .button {
+          font-size: 10.25px;
+          padding-top: 12px !important;
+          padding-bottom: 12px !important;
+          min-height: 42px !important;
+          padding-left: 16px !important;
+          padding-right: 26px !important; } }
 
 .embla {
   position: relative;
