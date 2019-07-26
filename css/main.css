@@ -7033,41 +7033,41 @@ header {
       color: #fff !important;
       background-color: transparent; }
 
-.hero {
+.hero-banner {
   clip-path: polygon(0 0, 0 100%, 380% 0);
   min-height: 945px !important; }
-  .hero .hero-body {
+  .hero-banner .hero-body {
     align-items: flex-start !important;
     padding-top: 142px; }
-    .hero .hero-body .container .title {
+    .hero-banner .hero-body .container .title {
       font-size: 64.5px;
       font-weight: 500;
       line-height: 1.22;
       padding-bottom: 25px; }
-      .hero .hero-body .container .title span {
+      .hero-banner .hero-body .container .title span {
         background: #EDEDEDD9;
         padding-right: 10px; }
-    .hero .hero-body .container .subtitle {
+    .hero-banner .hero-body .container .subtitle {
       font-size: 15pxpx;
       font-weight: 500;
       line-height: 30px; }
-      .hero .hero-body .container .subtitle span {
+      .hero-banner .hero-body .container .subtitle span {
         background: #EDEDEDD9;
         padding-right: 10px; }
-    .hero .hero-body .container .signup-button {
+    .hero-banner .hero-body .container .signup-button {
       border: 2px solid #fff;
       min-height: 52px;
       font-size: 14px;
       font-weight: 500;
       background-color: transparent;
       padding: 18px 43px 15px 25px; }
-      .hero .hero-body .container .signup-button span {
+      .hero-banner .hero-body .container .signup-button span {
         background-color: #EDEDEDD9;
         transition-duration: .2s; }
-      .hero .hero-body .container .signup-button:hover span {
+      .hero-banner .hero-body .container .signup-button:hover span {
         color: #fff !important;
         background-color: transparent; }
-    .hero .hero-body .banner-image {
+    .hero-banner .hero-body .banner-image {
       position: absolute;
       width: 100%;
       max-width: 1020px;
@@ -7301,7 +7301,8 @@ header {
       max-width: 850px; }
 
 .try-it {
-  padding-top: 190px; }
+  padding-top: 190px;
+  padding-bottom: 250px; }
   .try-it .container {
     display: flex;
     flex-direction: column;
@@ -7327,7 +7328,9 @@ header {
             padding-right: 10px; }
     .try-it .container .media-content {
       padding-top: 90px;
-      display: flex; }
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
       .try-it .container .media-content .media-item {
         display: flex;
         flex-direction: column;
@@ -7352,10 +7355,102 @@ header {
               max-width: 45px; }
           .try-it .container .media-content .media-item-form form .field .control input {
             border-width: 2px;
-            padding: 12.25 30px;
+            padding: 12.25px 30px;
+            min-height: 55px;
             font-size: 23.5px;
             font-weight: 500;
             color: #FD2F05; }
             .try-it .container .media-content .media-item-form form .field .control input::placeholder, .try-it .container .media-content .media-item-form form .field .control input::-moz-placeholder, .try-it .container .media-content .media-item-form form .field .control input::-webkit-input-placeholder {
               color: #FD2F05;
               opacity: .8; }
+
+.hero-contact {
+  position: relative; }
+  .hero-contact .hero-body {
+    padding-top: 200px; }
+    .hero-contact .hero-body .container {
+      display: flex;
+      justify-content: center; }
+      .hero-contact .hero-body .container form {
+        width: 100%;
+        max-width: 800px;
+        padding: 0 35px;
+        position: relative; }
+        .hero-contact .hero-body .container form .arrow-up-btn {
+          position: absolute;
+          right: -70px;
+          top: -120px;
+          cursor: pointer; }
+        .hero-contact .hero-body .container form .field {
+          margin-bottom: 25px; }
+          .hero-contact .hero-body .container form .field.is-grouped .control {
+            flex-shrink: 1; }
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container .control-image {
+              padding: 15px 20px;
+              border: 2px solid #fff;
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 10px;
+              height: 65px; }
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a {
+              color: #fff;
+              background-color: #f7d4d7;
+              font-size: 10.5px;
+              font-weight: 500;
+              transition-duration: .2s; }
+              .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a:hover {
+                background-color: transparent !important; }
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-captcha {
+              max-width: 164px; }
+          .hero-contact .hero-body .container form .field.is-grouped .button {
+            height: 65px;
+            margin-left: auto;
+            padding-left: 60px !important;
+            padding-right: 60px !important; }
+          .hero-contact .hero-body .container form .field .control input,
+          .hero-contact .hero-body .container form .field .control textarea {
+            border-width: 2px;
+            border-color: #fff;
+            background: transparent;
+            padding: 18px 20px 18px 20px;
+            font-size: 23.5px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 8px; }
+            .hero-contact .hero-body .container form .field .control input::placeholder, .hero-contact .hero-body .container form .field .control input::-moz-placeholder, .hero-contact .hero-body .container form .field .control input::-webkit-input-placeholder,
+            .hero-contact .hero-body .container form .field .control textarea::placeholder,
+            .hero-contact .hero-body .container form .field .control textarea::-moz-placeholder,
+            .hero-contact .hero-body .container form .field .control textarea::-webkit-input-placeholder {
+              color: #fff;
+              opacity: .9; }
+          .hero-contact .hero-body .container form .field .control input {
+            min-height: 65px; }
+          .hero-contact .hero-body .container form .field .control textarea {
+            min-height: 150px; }
+          .hero-contact .hero-body .container form .field .control.has-icons-right input {
+            padding-right: 60px; }
+          .hero-contact .hero-body .container form .field .control .is-right {
+            top: 14px;
+            right: 15px; }
+  .hero-contact .hero-foot {
+    padding-left: 40px;
+    padding-right: 40px; }
+    .hero-contact .hero-foot .footer {
+      padding-bottom: 60px;
+      background-color: #FD2F05; }
+      .hero-contact .hero-foot .footer .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .hero-contact .hero-foot .footer .content .design-by {
+          display: flex;
+          align-items: center; }
+          .hero-contact .hero-foot .footer .content .design-by p {
+            font-size: 15px;
+            font-weight: 500;
+            background-color: #f7d4d7;
+            margin: 0; }
+          .hero-contact .hero-foot .footer .content .design-by img {
+            margin-left: 50px; }
