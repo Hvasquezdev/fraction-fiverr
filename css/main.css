@@ -8080,6 +8080,12 @@ header {
   position: relative; }
   .hero-contact .hero-body {
     padding-top: 200px; }
+    @media screen and (min-width: 320px) {
+      .hero-contact .hero-body {
+        padding-top: 70px; } }
+    @media screen and (min-width: 768px) {
+      .hero-contact .hero-body {
+        padding-top: 250px; } }
     .hero-contact .hero-body .container {
       display: flex;
       justify-content: center; }
@@ -8090,62 +8096,163 @@ header {
         position: relative; }
         .hero-contact .hero-body .container form .arrow-up-btn {
           position: absolute;
-          right: -70px;
-          top: -120px;
           cursor: pointer; }
-        .hero-contact .hero-body .container form .field {
-          margin-bottom: 25px; }
-          .hero-contact .hero-body .container form .field.is-grouped .control {
-            flex-shrink: 1; }
-            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container .control-image {
-              padding: 15px 20px;
-              border: 2px solid #fff;
-              border-radius: 8px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: 10px;
-              height: 65px; }
-            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a {
-              color: #fff;
-              background-color: #f7d4d7;
-              font-size: 10.5px;
-              font-weight: 500;
-              transition-duration: .2s; }
-              .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a:hover {
-                background-color: transparent !important; }
-            .hero-contact .hero-body .container form .field.is-grouped .control.control-captcha {
-              max-width: 164px; }
-          .hero-contact .hero-body .container form .field.is-grouped .button {
-            height: 65px;
-            margin-left: auto;
-            padding-left: 60px !important;
-            padding-right: 60px !important; }
-          .hero-contact .hero-body .container form .field .control input,
-          .hero-contact .hero-body .container form .field .control textarea {
-            border-width: 2px;
-            border-color: #fff;
-            background: transparent;
-            padding: 18px 20px 18px 20px;
-            font-size: 23.5px;
-            font-weight: 500;
+          @media screen and (min-width: 320px) {
+            .hero-contact .hero-body .container form .arrow-up-btn {
+              right: 35px;
+              width: 47px;
+              top: -77px; } }
+          @media screen and (min-width: 768px) {
+            .hero-contact .hero-body .container form .arrow-up-btn {
+              width: initial;
+              top: -130px; } }
+          @media screen and (min-width: 1150px) {
+            .hero-contact .hero-body .container form .arrow-up-btn {
+              right: -70px; } }
+        @media screen and (min-width: 320px) {
+          .hero-contact .hero-body .container form .field {
+            margin-bottom: 15px; } }
+        @media screen and (min-width: 768px) {
+          .hero-contact .hero-body .container form .field {
+            margin-bottom: 25px; } }
+        @media screen and (min-width: 320px) {
+          .hero-contact .hero-body .container form .field.is-grouped {
+            flex-direction: column; } }
+        @media screen and (min-width: 768px) {
+          .hero-contact .hero-body .container form .field.is-grouped {
+            flex-direction: row; } }
+        .hero-contact .hero-body .container form .field.is-grouped .control {
+          flex-shrink: 1; }
+          @media screen and (min-width: 320px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control:first-child {
+              margin-right: 0;
+              margin-bottom: 15px; } }
+          @media screen and (min-width: 768px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control {
+              flex-grow: 1; }
+              .hero-contact .hero-body .container form .field.is-grouped .control:first-child {
+                margin-right: 15px;
+                margin-bottom: 0; } }
+          @media screen and (min-width: 320px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container {
+              max-width: 100px; } }
+          @media screen and (min-width: 430px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container {
+              max-width: 140px; } }
+          @media screen and (min-width: 514px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container {
+              max-width: 120px;
+              margin-right: 15px; } }
+          @media screen and (min-width: 768px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container {
+              max-width: 161px; } }
+          .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container .control-image {
+            padding: 15px 20px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            height: 65px; }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+              .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container .control-image {
+                padding: 8px 10px;
+                height: 40px;
+                margin-bottom: 5px; } }
+          .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a {
             color: #fff;
-            border-radius: 8px; }
-            .hero-contact .hero-body .container form .field .control input::placeholder, .hero-contact .hero-body .container form .field .control input::-moz-placeholder, .hero-contact .hero-body .container form .field .control input::-webkit-input-placeholder,
-            .hero-contact .hero-body .container form .field .control textarea::placeholder,
-            .hero-contact .hero-body .container form .field .control textarea::-moz-placeholder,
-            .hero-contact .hero-body .container form .field .control textarea::-webkit-input-placeholder {
-              color: #fff;
-              opacity: .9; }
-          .hero-contact .hero-body .container form .field .control input {
-            min-height: 65px; }
-          .hero-contact .hero-body .container form .field .control textarea {
-            min-height: 150px; }
-          .hero-contact .hero-body .container form .field .control.has-icons-right input {
-            padding-right: 60px; }
-          .hero-contact .hero-body .container form .field .control .is-right {
-            top: 14px;
-            right: 15px; }
+            background-color: #f7d4d7;
+            font-size: 10.5px;
+            font-weight: 500;
+            transition-duration: .2s; }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+              .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a {
+                font-size: 6.5px; } }
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a:hover {
+              background-color: transparent !important; }
+          @media screen and (min-width: 320px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-captcha {
+              max-width: 100px;
+              margin-right: 0; } }
+          @media screen and (min-width: 430px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-captcha {
+              max-width: 140px; } }
+          @media screen and (min-width: 514px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-captcha {
+              max-width: 120px; } }
+          @media screen and (min-width: 768px) {
+            .hero-contact .hero-body .container form .field.is-grouped .control.control-captcha {
+              max-width: 164px; } }
+        .hero-contact .hero-body .container form .field.is-grouped .button {
+          height: 65px;
+          margin-left: auto;
+          padding-left: 60px !important;
+          padding-right: 60px !important; }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            .hero-contact .hero-body .container form .field.is-grouped .button {
+              margin: 0 auto;
+              font-size: 10.25px;
+              padding-left: 40px !important;
+              padding-right: 45px !important;
+              padding-top: 15px !important;
+              padding-bottom: 7px !important;
+              height: auto;
+              min-height: 40px !important;
+              margin-top: 5px; } }
+          @media screen and (min-width: 514px) and (max-width: 767px) {
+            .hero-contact .hero-body .container form .field.is-grouped .button {
+              max-height: 40px;
+              margin-right: 0;
+              margin-top: 0; } }
+        @media screen and (min-width: 320px) {
+          .hero-contact .hero-body .container form .field.captcha-field-container {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row !important; } }
+        .hero-contact .hero-body .container form .field .control input,
+        .hero-contact .hero-body .container form .field .control textarea {
+          border-width: 2px;
+          border-color: #fff;
+          background: transparent;
+          padding: 18px 20px 18px 20px;
+          font-size: 23.5px;
+          font-weight: 500;
+          color: #fff;
+          border-radius: 8px; }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            .hero-contact .hero-body .container form .field .control input,
+            .hero-contact .hero-body .container form .field .control textarea {
+              font-size: 15px;
+              padding-top: 12px;
+              padding-bottom: 8px;
+              padding-left: 15px; } }
+          .hero-contact .hero-body .container form .field .control input::placeholder, .hero-contact .hero-body .container form .field .control input::-moz-placeholder, .hero-contact .hero-body .container form .field .control input::-webkit-input-placeholder,
+          .hero-contact .hero-body .container form .field .control textarea::placeholder,
+          .hero-contact .hero-body .container form .field .control textarea::-moz-placeholder,
+          .hero-contact .hero-body .container form .field .control textarea::-webkit-input-placeholder {
+            color: #fff;
+            opacity: .9; }
+        .hero-contact .hero-body .container form .field .control input {
+          min-height: 65px; }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            .hero-contact .hero-body .container form .field .control input {
+              min-height: 40px; } }
+        .hero-contact .hero-body .container form .field .control textarea {
+          min-height: 150px; }
+        .hero-contact .hero-body .container form .field .control.has-icons-right input {
+          padding-right: 60px; }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            .hero-contact .hero-body .container form .field .control.has-icons-right input {
+              padding-right: 50px; } }
+        .hero-contact .hero-body .container form .field .control .is-right {
+          top: 14px;
+          right: 15px; }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            .hero-contact .hero-body .container form .field .control .is-right {
+              width: 25px;
+              height: 26px;
+              top: 7.5px; } }
   .hero-contact .hero-foot {
     padding-left: 40px;
     padding-right: 40px; }
@@ -8156,6 +8263,26 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center; }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          .hero-contact .hero-foot .footer .content {
+            flex-direction: column;
+            justify-content: center; } }
+        .hero-contact .hero-foot .footer .content .footer-logo {
+          display: flex; }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            .hero-contact .hero-foot .footer .content .footer-logo {
+              margin-bottom: 20px; } }
+          .hero-contact .hero-foot .footer .content .footer-logo span {
+            background-color: #f7d4d7;
+            color: #fff;
+            font-weight: 500;
+            font-size: 19.4px;
+            margin-left: 10px; }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+              .hero-contact .hero-foot .footer .content .footer-logo span {
+                font-size: 12.3px; } }
+          .hero-contact .hero-foot .footer .content .footer-logo:active, .hero-contact .hero-foot .footer .content .footer-logo:focus {
+            background-color: transparent !important; }
         .hero-contact .hero-foot .footer .content .design-by {
           display: flex;
           align-items: center; }
@@ -8164,5 +8291,11 @@ header {
             font-weight: 500;
             background-color: #f7d4d7;
             margin: 0; }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+              .hero-contact .hero-foot .footer .content .design-by p {
+                font-size: 12.3px; } }
           .hero-contact .hero-foot .footer .content .design-by img {
             margin-left: 50px; }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+              .hero-contact .hero-foot .footer .content .design-by img {
+                margin-left: 30px; } }
