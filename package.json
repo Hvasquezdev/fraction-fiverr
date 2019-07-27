@@ -41,6 +41,6 @@
     "start": "npm-run-all --parallel css-watch js-watch"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
+    "@babel/polyfill": "^7.4.4"
   }
 }

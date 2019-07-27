@@ -80,13 +80,6 @@ $primary: $orange;
 	border-color: #fff;
 }
 
-.container {
-	@media screen and (min-width: 1150px) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-}
-
 header {
 	position: absolute;
 	width: 100%;
@@ -969,6 +962,10 @@ header {
 			flex-direction: row;
 		}
 
+		@media screen and (min-width: 1350px) {
+			justify-content: space-evenly;
+		}
+
 		.text-content {
 			@media screen and (min-width: 320px) {
 				text-align: center;
@@ -978,6 +975,7 @@ header {
 			@media screen and (min-width: 1150px) {
 				text-align: left;
 				padding-right: 90px;
+				min-width: 300px;
 			}
 
 			@media screen and (min-width: 1250px) {
@@ -1015,7 +1013,7 @@ header {
 						padding-right: 10px;
 					}
 
-					@media screen and (min-width: 320px) and (max-width: 1150px) {
+					@media screen and (min-width: 320px) and (max-width: 1149px) {
 						&:last-child {
 							margin-left: -10px;
 						}
@@ -1144,22 +1142,120 @@ header {
 		justify-content: center;
 		align-items: center;
 
+		@media screen and (min-width: 320px) {
+			flex-direction: column;
+		}
+
+		@media screen and (min-width: 1150px) {
+			flex-direction: row;
+		}
+
 		.text-content {
-			padding-right: 90px;
 			align-self: self-end;
-			padding-bottom: 35px;
+
+			@media screen and (min-width: 320px) {
+				padding: 0;
+				align-self: unset;
+				max-width: 225px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				order: 2;
+			}
+
+			@media screen and (min-width: 768px) {
+				max-width: 320px;
+			}
+
+			@media screen and (min-width: 1150px) {
+				padding-right: 90px;
+				padding-bottom: 25px;
+				max-width: unset;
+				order: 1;
+				min-width: 300px;
+			}
+
+			@media screen and (min-width: 1250px) {
+				min-width: 350px;
+			}
+
+			.mobile-text {
+				display: block;
+				font-size: 10px;
+				text-align: center;
+				line-height: 20px;
+				font-weight: 500;
+				margin-bottom: 15px;
+
+				@media screen and (min-width: 768px) {
+					font-size: 15px;
+					line-height: 25px;
+				}
+
+				@media screen and (min-width: 1150px) {
+					display: none;
+				}
+			}
+
+			.desktop-text {
+				display: none;
+
+				@media screen and (min-width: 1150px) {
+					display: block;
+					align-self: flex-start;
+				}
+			}
 
 			.title {
-				font-size: 45px;
 				font-weight: 500;
 				line-height: 1.2;
-				margin-bottom: 35px;
+
+				@media screen and (min-width: 320px) {
+					font-size: 27.5px;
+					margin-bottom: 10px;
+					margin-left: -40px;
+
+					br {
+						display: none;
+					}
+				}
+
+				@media screen and (min-width: 768px) {
+					font-size: 32px;
+				}
+
+				@media screen and (min-width: 1150px) {
+					margin-bottom: 35px;
+					margin-left: 0;
+					align-self: flex-start;
+
+					br {
+						display: block;
+					}
+				}
+
+				@media screen and (min-width: 1250px) {
+					font-size: 45px;
+				}
 
 				span {
 					background-color: #f7d4d7;
 
 					&:not(:last-child) {
 						padding-right: 10px;
+					}
+
+					@media screen and (min-width: 320px) {
+						&:last-child {
+							margin-left: -10px;
+						}
+					}
+
+					@media screen and (min-width: 1150px) {
+						&:last-child {
+							margin-left: 0;
+						}
 					}
 				}
 			}
@@ -1178,10 +1274,36 @@ header {
 					}
 				}
 			}
+
+			.button {	
+				@media screen and (min-width: 320px) and (max-width: 767px) {
+					margin-top: 5px;
+					font-size: 10.25px;
+					padding-top: 12px !important;
+					padding-bottom: 12px !important;
+					min-height: 42px !important;
+					padding-left: 16px !important;
+					padding-right: 26px !important;
+				}
+			}
 		}
 
 		.media-content {
-			max-width: 850px;
+			width: 100%;
+
+			@media screen and (min-width: 320px) {
+				max-width: 250px;
+				margin-bottom: 15px;
+			}
+
+			@media screen and (min-width: 768px) {
+				max-width: 400px;
+			}
+
+			@media screen and (min-width: 1150px) {
+				max-width: 850px;
+				order: 2;
+			}
 		}
 	}
 }
@@ -1228,7 +1350,8 @@ header {
 			padding-top: 90px;
 			width: 100%;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
+			max-width: 1080px;
 
 			.media-item {
 				display: flex;
