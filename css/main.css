@@ -7328,36 +7328,74 @@ header {
     .embla .embla__viewport .is-dragging {
       cursor: grabbing; }
     .embla .embla__viewport .embla__container {
-      display: flex;
-      will-change: transform;
-      height: 500px; }
+      display: flex; }
+      @media screen and (min-width: 320px) {
+        .embla .embla__viewport .embla__container {
+          justify-content: center;
+          padding-bottom: 20px; } }
+      @media screen and (min-width: 1150px) {
+        .embla .embla__viewport .embla__container {
+          padding-bottom: 45px; } }
       .embla .embla__viewport .embla__container .embla__slide {
         flex: 0 0 auto;
-        min-width: 1182px; }
+        max-width: 1345px;
+        width: 100%; }
         .embla .embla__viewport .embla__container .embla__slide:not(:first-child) {
-          padding-left: 82px; }
+          padding-left: 41px; }
+          @media screen and (min-width: 768px) {
+            .embla .embla__viewport .embla__container .embla__slide:not(:first-child) {
+              padding-left: 82px; } }
         .embla .embla__viewport .embla__container .embla__slide:not(:last-child) {
-          padding-right: 82px; }
+          padding-right: 41px; }
+          @media screen and (min-width: 768px) {
+            .embla .embla__viewport .embla__container .embla__slide:not(:last-child) {
+              padding-right: 82px; } }
         .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
           width: 100%;
-          min-width: 1182px;
-          max-width: 1182px;
           height: 450px;
           background-color: #FD2F05;
           border-radius: 25px;
           position: relative; }
+          @media screen and (min-width: 320px) {
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+              height: auto;
+              padding: 0 35px;
+              display: flex;
+              justify-content: center; } }
+          @media screen and (min-width: 600px) {
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+              justify-content: flex-start; } }
+          @media screen and (min-width: 1150px) {
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+              padding-left: 50px; } }
+          @media screen and (min-width: 1250px) {
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+              padding-left: 100px; } }
+          @media screen and (min-width: 1350px) {
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+              padding-left: 150px; } }
+          @media screen and (min-width: 1450px) {
+            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
+              padding-left: 165px; } }
           .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner:after {
             content: '';
             position: absolute;
             top: 100%;
-            left: 195px;
             width: 0;
-            height: 0;
-            border-top: solid 45px #FD2F05;
-            border-left: solid 45px transparent;
-            border-right: solid 45px transparent; }
+            height: 0; }
+            @media screen and (min-width: 320px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner:after {
+                left: 135px;
+                border-top: solid 15px #FD2F05;
+                border-left: solid 15px transparent;
+                border-right: solid 15px transparent; } }
+            @media screen and (min-width: 1150px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner:after {
+                left: 195px;
+                border-top: solid 45px #FD2F05;
+                border-left: solid 45px transparent;
+                border-right: solid 45px transparent; } }
           .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
-            background-image: url("../assets/svg/review-percent.svg");
             background-position: right center;
             background-repeat: no-repeat;
             position: absolute;
@@ -7371,14 +7409,57 @@ header {
             justify-content: center; }
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
               margin-bottom: -75px; }
+              @media screen and (min-width: 320px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
+                  display: none; } }
+              @media screen and (min-width: 768px) and (max-width: 839px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
+                  margin-bottom: -15px;
+                  margin-right: -120px;
+                  display: initial;
+                  font-size: 10.25px;
+                  padding-top: 12px !important;
+                  padding-bottom: 12px !important;
+                  min-height: 42px !important;
+                  padding-left: 16px !important;
+                  padding-right: 26px !important; } }
+              @media screen and (min-width: 840px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
+                  margin-bottom: -25px;
+                  display: initial;
+                  margin-right: -20px; } }
+            @media screen and (min-width: 320px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
+                width: 86px;
+                top: -60px;
+                right: unset;
+                background-image: url("../assets/svg/review-percent-mobile.svg"); } }
+            @media screen and (min-width: 600px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
+                top: 60px;
+                width: 263px;
+                right: 34px;
+                background-image: url("../assets/svg/review-percent.svg"); } }
           .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
             padding-left: 165px;
             padding-top: 88px;
             display: flex;
             flex-direction: column;
             align-items: flex-start; }
+            @media screen and (min-width: 320px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 30px; } }
+            @media screen and (min-width: 600px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
+                padding-bottom: 60px;
+                padding-top: 60px; } }
+            @media screen and (min-width: 1150px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
+                padding-bottom: 75px;
+                padding-top: 85px; } }
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
-              font-size: 45px;
               font-weight: 500;
               color: #fff;
               line-height: 1.2;
@@ -7386,22 +7467,62 @@ header {
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text span {
                 background-color: #f7d4d7;
                 padding-right: 10px; }
+              @media screen and (min-width: 320px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
+                  font-size: 18px; } }
+              @media screen and (min-width: 768px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
+                  font-size: 24px; } }
+              @media screen and (min-width: 840px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
+                  font-size: 32px; } }
+              @media screen and (min-width: 1150px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
+                  font-size: 45px; } }
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author {
               display: flex;
-              align-items: center;
-              padding-top: 36px; }
+              align-items: center; }
+              @media screen and (min-width: 320px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author {
+                  padding-top: 10px; } }
+              @media screen and (min-width: 1150px) {
+                .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author {
+                  padding-top: 36px; } }
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
-                width: 62px;
-                height: 62px;
                 border-radius: 50%;
                 background: #000;
-                border: 2px solid #fff;
-                margin-right: 55px; }
+                border: 2px solid #fff; }
+                @media screen and (min-width: 320px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 15px; } }
+                @media screen and (min-width: 768px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 15px; } }
+                @media screen and (min-width: 1150px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
+                    width: 62px;
+                    height: 62px;
+                    margin-right: 55px; } }
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
-                font-size: 20.5px;
                 font-weight: 500;
                 color: #fff;
                 background-color: #f7d4d7; }
+                @media screen and (min-width: 320px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
+                    font-size: 10px; } }
+                @media screen and (min-width: 768px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
+                    font-size: 12px; } }
+                @media screen and (min-width: 840px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
+                    font-size: 18px; } }
+                @media screen and (min-width: 1150px) {
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
+                    font-size: 20px; } }
   .embla .embla__button {
     background-color: transparent;
     position: absolute;
@@ -7413,74 +7534,241 @@ header {
   .embla .embla__button--prev {
     left: 40px;
     bottom: 120px; }
+    @media screen and (min-width: 320px) {
+      .embla .embla__button--prev {
+        display: none; } }
+    @media screen and (min-width: 1550px) {
+      .embla .embla__button--prev {
+        display: block; } }
   .embla .embla__button--next {
     right: 40px;
     bottom: 120px; }
+    @media screen and (min-width: 320px) {
+      .embla .embla__button--next {
+        display: none; } }
+    @media screen and (min-width: 1550px) {
+      .embla .embla__button--next {
+        display: block; } }
 
-.companies {
-  padding-top: 50px; }
-  .companies .companies-list {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 320px) {
+  .companies {
+    padding-top: 0; } }
+
+@media screen and (min-width: 768px) {
+  .companies {
+    padding-top: 50px; } }
+
+.companies .container {
+  text-align: center; }
+  @media screen and (min-width: 320px) {
+    .companies .container {
+      max-width: 80%; } }
+  .companies .container .arrow-left,
+  .companies .container .arrow-right {
+    top: 30px;
+    position: absolute;
+    cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      .companies .container .arrow-left,
+      .companies .container .arrow-right {
+        display: none; } }
+  .companies .container .arrow-left {
+    left: 0;
+    padding-left: 10px; }
+  .companies .container .arrow-right {
+    right: 0;
+    padding-right: 10px; }
+  .companies .container .button {
+    margin-top: 5px;
+    font-size: 10.25px;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    min-height: 42px !important;
+    padding-left: 16px !important;
+    padding-right: 26px !important; }
+    @media screen and (min-width: 768px) {
+      .companies .container .button {
+        display: none; } }
+
+.companies .companies-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; }
+  @media screen and (min-width: 320px) {
+    .companies .companies-list {
+      max-width: 130px;
+      margin: auto;
+      flex-wrap: nowrap;
+      overflow: hidden; } }
+  @media screen and (min-width: 600px) {
+    .companies .companies-list {
+      max-width: 190px; } }
+  @media screen and (min-width: 768px) {
+    .companies .companies-list {
+      max-width: 890px;
+      flex-wrap: wrap; } }
+  .companies .companies-list .company-item {
+    cursor: pointer;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 890px; }
-    .companies .companies-list .first-row {
-      padding-bottom: 20px; }
-    .companies .companies-list .first-row,
-    .companies .companies-list .second-row {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    .companies .companies-list .company-item {
-      cursor: pointer;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      margin: .25rem 2rem;
-      min-height: 80px;
-      text-align: center;
-      color: #adcfff;
-      transition-duration: .2s; }
-      .companies .companies-list .company-item:first-child {
-        margin-left: 0; }
-      .companies .companies-list .company-item:last-child {
-        margin-right: 0; }
-      .companies .companies-list .company-item:hover {
-        color: #FD2F05; }
-      .companies .companies-list .company-item svg {
-        max-width: 125px; }
-
-.get-your-offer {
-  padding-top: 190px; }
-  .get-your-offer .container {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    margin: .25rem 0;
+    min-height: 80px;
+    text-align: center;
+    color: #adcfff;
+    transition-duration: .2s;
+    padding: 0 30px;
+    flex-shrink: 0; }
+    @media screen and (min-width: 768px) {
+      .companies .companies-list .company-item {
+        margin-bottom: 50px; } }
+    .companies .companies-list .company-item embed {
+      width: 125px;
+      color: #adcfff; }
+      @media screen and (min-width: 320px) {
+        .companies .companies-list .company-item embed {
+          width: 65px; } }
+      @media screen and (min-width: 600px) {
+        .companies .companies-list .company-item embed {
+          width: 125px; } }
+      .companies .companies-list .company-item embed:hover {
+        color: #FD2F05; }
+      .companies .companies-list .company-item embed svg {
+        width: 100%;
+        color: inherit; }
+
+@media screen and (min-width: 320px) {
+  .get-your-offer {
+    padding-top: 90px; } }
+
+@media screen and (min-width: 1150px) {
+  .get-your-offer {
+    padding-top: 150px; } }
+
+.get-your-offer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (min-width: 320px) {
+    .get-your-offer .container {
+      flex-direction: column; } }
+  @media screen and (min-width: 1150px) {
+    .get-your-offer .container {
+      flex-direction: row; } }
+  @media screen and (min-width: 320px) {
     .get-your-offer .container .text-content {
-      padding-right: 90px; }
+      text-align: center;
+      padding: 0; } }
+  @media screen and (min-width: 1150px) {
+    .get-your-offer .container .text-content {
+      text-align: left;
+      padding-right: 90px; } }
+  @media screen and (min-width: 1250px) {
+    .get-your-offer .container .text-content {
+      min-width: 350px; } }
+  .get-your-offer .container .text-content .title {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 35px; }
+    @media screen and (min-width: 320px) {
       .get-your-offer .container .text-content .title {
-        font-size: 45px;
-        font-weight: 500;
-        line-height: 1.2;
-        margin-bottom: 35px; }
-        .get-your-offer .container .text-content .title span {
-          background-color: #f7d4d7; }
-          .get-your-offer .container .text-content .title span:not(:last-child) {
-            padding-right: 10px; }
+        font-size: 27.5px; }
+        .get-your-offer .container .text-content .title .last-break-line {
+          display: none; } }
+    @media screen and (min-width: 768px) {
+      .get-your-offer .container .text-content .title {
+        font-size: 32px; } }
+    @media screen and (min-width: 1250px) {
+      .get-your-offer .container .text-content .title {
+        font-size: 45px; }
+        .get-your-offer .container .text-content .title .last-break-line {
+          display: block; } }
+    .get-your-offer .container .text-content .title span {
+      background-color: #f7d4d7; }
+      .get-your-offer .container .text-content .title span:not(:last-child) {
+        padding-right: 10px; }
+      @media screen and (min-width: 320px) and (max-width: 1150px) {
+        .get-your-offer .container .text-content .title span:last-child {
+          margin-left: -10px; } }
+  .get-your-offer .container .text-content p {
+    font-size: 17.9px;
+    font-weight: 500;
+    color: #445875;
+    line-height: 30px; }
+    @media screen and (min-width: 320px) {
       .get-your-offer .container .text-content p {
-        font-size: 17.9px;
-        font-weight: 500;
-        color: #445875;
-        line-height: 30px; }
-        .get-your-offer .container .text-content p span {
-          background-color: #f7d4d7; }
-          .get-your-offer .container .text-content p span:not(:last-child) {
-            padding-right: 10px; }
-    .get-your-offer .container .media-content {
-      max-width: 850px; }
+        display: none; } }
+    @media screen and (min-width: 1150px) {
+      .get-your-offer .container .text-content p {
+        display: block; } }
+    .get-your-offer .container .text-content p span {
+      background-color: #f7d4d7; }
+      .get-your-offer .container .text-content p span:not(:last-child) {
+        padding-right: 10px; }
+  .get-your-offer .container .media-content {
+    max-width: 850px; }
+    @media screen and (min-width: 320px) {
+      .get-your-offer .container .media-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .get-your-offer .container .media-content .content-desktop {
+          display: none; } }
+    @media screen and (min-width: 320px) and (min-width: 1150px) {
+      .get-your-offer .container .media-content .content-desktop {
+        display: block; } }
+  @media screen and (min-width: 320px) and (min-width: 768px) {
+    .get-your-offer .container .media-content .content-mobile {
+      width: 350px; } }
+  @media screen and (min-width: 320px) and (min-width: 1150px) {
+    .get-your-offer .container .media-content .content-mobile {
+      display: none; } }
+    .get-your-offer .container .media-content .media-content__dots {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center; }
+      @media screen and (min-width: 1150px) {
+        .get-your-offer .container .media-content .media-content__dots {
+          display: none; } }
+      .get-your-offer .container .media-content .media-content__dots .media-content__dot {
+        background-color: #e6e6e6;
+        cursor: pointer;
+        position: relative;
+        padding: 0;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        border: 0;
+        display: flex;
+        align-items: center; }
+        @media screen and (min-width: 768px) {
+          .get-your-offer .container .media-content .media-content__dots .media-content__dot {
+            width: 20px;
+            height: 20px; } }
+        .get-your-offer .container .media-content .media-content__dots .media-content__dot:not(:last-child) {
+          margin-right: 10px; }
+        .get-your-offer .container .media-content .media-content__dots .media-content__dot.dot-is-selected {
+          background-color: #FD2F05; }
+    .get-your-offer .container .media-content p {
+      font-size: 10px;
+      max-width: 197px;
+      padding-top: 25px;
+      font-weight: 500;
+      text-align: center;
+      line-height: 18px; }
+      .get-your-offer .container .media-content p span {
+        background-color: #f7d4d7; }
+      @media screen and (min-width: 768px) {
+        .get-your-offer .container .media-content p {
+          font-size: 15px;
+          line-height: 24px;
+          max-width: 297px; } }
+      @media screen and (min-width: 1150px) {
+        .get-your-offer .container .media-content p {
+          display: none; } }
 
 .bold-promise {
   padding-top: 80px; }

@@ -537,44 +537,94 @@ header {
 
 		.embla__container {
 			display: flex;
-			will-change: transform;
-			height: 500px;
+
+			@media screen and (min-width: 320px) {
+				justify-content: center;
+				padding-bottom: 20px;
+			}
+
+			@media screen and (min-width: 1150px) {
+				padding-bottom: 45px;
+			}
 
 			.embla__slide {
 				flex: 0 0 auto;
-				min-width: 1182px;
+				max-width: 1345px;
+				width: 100%;
 			
 				&:not(:first-child) {
-					padding-left: 82px;
+					padding-left: 41px;
+
+					@media screen and (min-width: 768px) {
+						padding-left: 82px;
+					}
 				}
 			
 				&:not(:last-child) {
-					padding-right: 82px;
+					padding-right: 41px;
+
+					@media screen and (min-width: 768px) {
+						padding-right: 82px;
+					}
 				}
 			
 				.embla__slide__inner {
 					width: 100%;
-					min-width: 1182px;
-					max-width: 1182px;
 					height: 450px;
 					background-color: $primary;
 					border-radius: 25px;
 					position: relative;
+
+					@media screen and (min-width: 320px) {
+						height: auto;
+						padding: 0 35px;
+						display: flex;
+						justify-content: center;
+					}
+
+					@media screen and (min-width: 600px) {
+						justify-content: flex-start;
+					}
+
+					@media screen and (min-width: 1150px) {
+						padding-left: 50px;
+					}
+
+					@media screen and (min-width: 1250px) {
+						padding-left: 100px;
+					}
+
+					@media screen and (min-width: 1350px) {
+						padding-left: 150px;
+					}
+
+					@media screen and (min-width: 1450px) {
+						padding-left: 165px;
+					}
 				
 					&:after {
 						content:'';
 						position: absolute;
 						top: 100%;
-						left: 195px;
 						width: 0;
 						height: 0;
-						border-top: solid 45px $primary;
-						border-left: solid 45px transparent;
-						border-right: solid 45px transparent;
+
+						@media screen and (min-width: 320px) {
+							left: 135px;
+							border-top: solid 15px $primary;
+							border-left: solid 15px transparent;
+							border-right: solid 15px transparent;
+						}
+
+						@media screen and (min-width: 1150px) {
+							left: 195px;
+							border-top: solid 45px $primary;
+							border-left: solid 45px transparent;
+							border-right: solid 45px transparent;
+						}
 					}
 				
 					.card-percent-overlay {
-						background-image: url('../assets/svg/review-percent.svg');
 						background-position: right center;
 						background-repeat: no-repeat;
 						position: absolute;
@@ -589,6 +639,42 @@ header {
 				
 						.button {
 							margin-bottom: -75px;
+
+							@media screen and (min-width: 320px) {
+								display: none;
+							}
+
+							@media screen and (min-width: 768px) and (max-width: 839px) {
+								margin-bottom: -15px;
+								margin-right: -120px;
+								display: initial;
+								font-size: 10.25px;
+								padding-top: 12px !important;
+								padding-bottom: 12px !important;
+								min-height: 42px !important;
+								padding-left: 16px !important;
+								padding-right: 26px !important;
+							}
+
+							@media screen and (min-width: 840px) {
+								margin-bottom: -25px;
+								display: initial;
+								margin-right: -20px;
+							}
+						}
+
+						@media screen and (min-width: 320px) {
+							width: 86px;
+							top: -60px;
+							right: unset;
+							background-image: url('../assets/svg/review-percent-mobile.svg');
+						}
+
+						@media screen and (min-width: 600px) {
+							top: 60px;
+							width: 263px;
+							right: 34px;
+							background-image: url('../assets/svg/review-percent.svg');
 						}
 					}
 				
@@ -598,9 +684,24 @@ header {
 						display: flex;
 						flex-direction: column;
 						align-items: flex-start;
+
+						@media screen and (min-width: 320px) {
+							padding-left: 0;
+							padding-right: 0;
+							padding-bottom: 30px;
+						}
+
+						@media screen and (min-width: 600px) {
+							padding-bottom: 60px;
+							padding-top: 60px;
+						}
+
+						@media screen and (min-width: 1150px) {
+							padding-bottom: 75px;
+							padding-top: 85px;
+						}
 				
 						.review-text {
-							font-size: 45px;
 							font-weight: 500;
 							color: #fff;
 							line-height: 1.2;
@@ -610,27 +711,80 @@ header {
 								background-color: #f7d4d7;
 								padding-right: 10px;
 							}
+
+							@media screen and (min-width: 320px) {
+								font-size: 18px;
+							}
+
+							@media screen and (min-width: 768px) {
+								font-size: 24px;
+							}
+
+							@media screen and (min-width: 840px) {
+								font-size: 32px;
+							}
+
+							@media screen and (min-width: 1150px) {
+								font-size: 45px;
+							}
 						}
 				
 						.review-author {
 							display: flex;
 							align-items: center;
-							padding-top: 36px;
+
+							@media screen and (min-width: 320px) {
+								padding-top: 10px;
+							}
+
+							@media screen and (min-width: 1150px) {
+								padding-top: 36px;
+							}
 				
 							img {
-								width: 62px;
-								height: 62px;
 								border-radius: 50%;
 								background: #000;
 								border: 2px solid #fff;
-								margin-right: 55px;
+
+								@media screen and (min-width: 320px) {
+									height: 20px;
+									width: 20px;
+									margin-right: 15px;
+								}
+
+								@media screen and (min-width: 768px) {
+									height: 40px;
+									width: 40px;
+									margin-right: 15px;
+								}
+
+								@media screen and (min-width: 1150px) {
+									width: 62px;
+									height: 62px;
+									margin-right: 55px;
+								}
 							}
 				
 							.review-author__name {
-								font-size: 20.5px;
 								font-weight: 500;
 								color: #fff;
 								background-color: #f7d4d7;
+
+								@media screen and (min-width: 320px) {
+									font-size: 10px;
+								}
+
+								@media screen and (min-width: 768px) {
+									font-size: 12px;
+								}
+
+								@media screen and (min-width: 840px) {
+									font-size: 18px;
+								}
+
+								@media screen and (min-width: 1150px) {
+									font-size: 20px;
+								}
 							}
 						}
 					}
@@ -652,35 +806,103 @@ header {
 	.embla__button--prev {
 		left: 40px;
 		bottom: 120px;
+
+		@media screen and (min-width: 320px) {
+			display: none;
+		}
+
+		@media screen and (min-width: 1550px) {
+			display: block;
+		}
 	}
 	
 	.embla__button--next {
 		right: 40px;
 		bottom: 120px;
+
+		@media screen and (min-width: 320px) {
+			display: none;
+		}
+
+		@media screen and (min-width: 1550px) {
+			display: block;
+		}
 	}
 }
 
 .companies {
-	padding-top: 50px;
+	@media screen and (min-width: 320px) {
+		padding-top: 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-top: 50px;
+	}
+
+	.container {
+		text-align: center;
+
+		@media screen and (min-width: 320px) {
+			max-width: 80%;
+		}
+
+		.arrow-left,
+		.arrow-right {
+			top: 30px;
+			position: absolute;
+			cursor: pointer;
+
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+
+		.arrow-left {
+			left: 0;
+			padding-left: 10px;
+		}
+
+		.arrow-right {
+			right: 0;
+			padding-right: 10px;
+		}
+
+		.button {
+			margin-top: 5px;
+			font-size: 10.25px;
+			padding-top: 12px !important;
+			padding-bottom: 12px !important;
+			min-height: 42px !important;
+			padding-left: 16px !important;
+			padding-right: 26px !important;
+
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
 
 	.companies-list {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 		margin: 0 auto;
-		max-width: 890px;
 
-		.first-row {
-			padding-bottom: 20px;
+		@media screen and (min-width: 320px) {
+			max-width: 130px;
+			margin: auto;
+			flex-wrap: nowrap;
+			overflow: hidden;
 		}
 
-		.first-row,
-		.second-row {
-			width: 100%;
-			display: flex;
+		@media screen and (min-width: 600px) {
+			max-width: 190px;
+		}
+
+		@media screen and (min-width: 768px) {
+			max-width: 890px;
 			flex-wrap: wrap;
-			justify-content: space-between;
 		}
 
 		.company-item {
@@ -688,53 +910,115 @@ header {
 			align-items: center;
 			display: flex;
 			justify-content: center;
-			margin: .25rem 2rem;
+			margin: .25rem 0;
 			min-height: 80px;
 			text-align: center;
 			color: #adcfff;
 			transition-duration: .2s;
+			padding: 0 30px;
+			flex-shrink: 0;
 
-			&:first-child {
-				margin-left: 0;
+			@media screen and (min-width: 768px) {
+				margin-bottom: 50px;
 			}
 
-			&:last-child {
-				margin-right: 0;
-			}
+			embed {
+				width: 125px;
+				color: #adcfff;
 
-			&:hover {
-				color: $primary;
-			}
+				@media screen and (min-width: 320px) {
+					width: 65px;
+				}
 
-			svg {
-				max-width: 125px;
+				@media screen and (min-width: 600px) {
+					width: 125px;
+				}
+
+				&:hover {
+					color: $primary;
+				}
+
+				svg {
+					width: 100%;
+					color: inherit;
+				}
 			}
 		}
 	}
 }
 
 .get-your-offer {
-	padding-top: 190px;
+	@media screen and (min-width: 320px) {
+		padding-top: 90px;
+	}
+
+	@media screen and (min-width: 1150px) {
+		padding-top: 150px;
+	}
 
 	.container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
+		@media screen and (min-width: 320px) {
+			flex-direction: column;
+		}
+
+		@media screen and (min-width: 1150px) {
+			flex-direction: row;
+		}
+
 		.text-content {
-			padding-right: 90px;
+			@media screen and (min-width: 320px) {
+				text-align: center;
+				padding: 0;
+			}
+
+			@media screen and (min-width: 1150px) {
+				text-align: left;
+				padding-right: 90px;
+			}
+
+			@media screen and (min-width: 1250px) {
+				min-width: 350px;
+			}
 
 			.title {
-				font-size: 45px;
 				font-weight: 500;
 				line-height: 1.2;
 				margin-bottom: 35px;
+
+				@media screen and (min-width: 320px) {
+					font-size: 27.5px;
+
+					.last-break-line {
+						display: none;
+					}
+				}
+
+				@media screen and (min-width: 768px) {
+					font-size: 32px;
+				}
+
+				@media screen and (min-width: 1250px) {
+					font-size: 45px;
+					.last-break-line {
+						display: block;
+					}
+				}
 
 				span {
 					background-color: #f7d4d7;
 
 					&:not(:last-child) {
 						padding-right: 10px;
+					}
+
+					@media screen and (min-width: 320px) and (max-width: 1150px) {
+						&:last-child {
+							margin-left: -10px;
+						}
 					}
 				}
 			}
@@ -744,6 +1028,14 @@ header {
 				font-weight: 500;
 				color: #445875;
 				line-height: 30px;
+
+				@media screen and (min-width: 320px) {
+					display: none;
+				}
+
+				@media screen and (min-width: 1150px) {
+					display: block;
+				}
 
 				span {
 					background-color: #f7d4d7;
@@ -757,6 +1049,89 @@ header {
 
 		.media-content {
 			max-width: 850px;
+
+			@media screen and (min-width: 320px) {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.content-desktop {
+					display: none;
+
+					@media screen and (min-width: 1150px) {
+						display: block;
+					}
+				}
+
+				.content-mobile {
+					@media screen and (min-width: 768px) {
+						width: 350px;
+					}
+
+					@media screen and (min-width: 1150px) {
+						display: none;
+					}
+				}
+			}
+
+			.media-content__dots {
+				margin-top: 10px;
+				display: flex;
+				justify-content: center;
+
+				@media screen and (min-width: 1150px) {
+					display: none;
+				}
+				.media-content__dot {
+					background-color: #e6e6e6;
+					cursor: pointer;
+					position: relative;
+					padding: 0;
+					border-radius: 50%;
+					width: 14px;
+					height: 14px;
+					border: 0;
+					display: flex;
+					align-items: center;
+
+					@media screen and (min-width: 768px) {
+						width: 20px;
+						height: 20px;
+					}
+
+					&:not(:last-child) {
+						margin-right: 10px;
+					}
+
+					&.dot-is-selected {
+						background-color: $primary;
+					}
+				}
+			}
+
+			p {
+				font-size: 10px;
+				max-width: 197px;
+				padding-top: 25px;
+				font-weight: 500;
+				text-align: center;
+				line-height: 18px;
+
+				span {
+					background-color: #f7d4d7;
+				}
+
+				@media screen and (min-width: 768px) {
+					font-size: 15px;
+					line-height: 24px;
+					max-width: 297px;
+				}
+
+				@media screen and (min-width: 1150px) {
+					display: none;
+				}
+			}
 		}
 	}
 }
