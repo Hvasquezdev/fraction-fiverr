@@ -1306,6 +1306,10 @@ header {
 				max-width: 850px;
 				order: 2;
 			}
+
+			@media screen and (min-width: 1550px) {
+				max-width: 950px;
+			}
 		}
 	}
 }
