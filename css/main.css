@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7010,28 +7011,25 @@ header {
       max-height: 18px;
       padding-top: 0;
       padding-bottom: 0;
-      background: #EDEDEDD9;
       padding: 0;
-      font-size: 9.7px;
+      font-size: 12px;
       font-weight: 500;
+      text-transform: uppercase;
       transition-duration: .2s; }
       header .navbar .navbar-start .navbar-item:not(:last-child) {
         margin-right: 60px; }
       header .navbar .navbar-start .navbar-item:first-child {
         margin-left: 55px; }
+      header .navbar .navbar-start .navbar-item:hover {
+        background-color: transparent !important; }
   header .navbar .navbar-end .contact-button {
-    border: 2px solid #fff;
-    min-height: 35px;
-    font-size: 9.7px;
-    font-weight: 500;
+    border-width: 2px;
+    border-color: #fff;
+    min-height: 39px;
+    font-size: 12px;
+    font-weight: 400;
     background-color: transparent;
-    padding: 9.5px 36.7px 6.5px 22.3px; }
-    header .navbar .navbar-end .contact-button span {
-      background-color: #EDEDEDD9;
-      transition-duration: .2s; }
-    header .navbar .navbar-end .contact-button:hover span {
-      color: #fff !important;
-      background-color: transparent; }
+    padding: 10px 35px 10px 35px; }
 
 @media screen and (min-width: 320px) {
   .hero-banner {
@@ -7091,11 +7089,8 @@ header {
     .hero-banner .hero-body {
       flex-direction: row; } }
   .hero-banner .hero-body .container .title {
-    font-weight: 500;
-    line-height: 1.22; }
-    .hero-banner .hero-body .container .title span {
-      background: #EDEDEDD9;
-      padding-right: 10px; }
+    font-weight: 900;
+    line-height: 1; }
     @media screen and (min-width: 320px) {
       .hero-banner .hero-body .container .title {
         font-size: 27px;
@@ -7114,11 +7109,11 @@ header {
       .hero-banner .hero-body .container .title {
         font-size: 64.5px;
         padding-bottom: 25px; } }
+    @media screen and (min-width: 1650px) {
+      .hero-banner .hero-body .container .title {
+        font-size: 84.5px; } }
   .hero-banner .hero-body .container .subtitle {
-    font-weight: 500; }
-    .hero-banner .hero-body .container .subtitle span {
-      background: #EDEDEDD9;
-      padding-right: 10px; }
+    font-weight: 400; }
     @media screen and (min-width: 320px) {
       .hero-banner .hero-body .container .subtitle {
         font-size: 10.5px;
@@ -7133,7 +7128,8 @@ header {
       .hero-banner .hero-body .container .subtitle {
         font-size: 15.5px;
         max-width: unset;
-        line-height: 24px; }
+        line-height: 24px;
+        margin-bottom: 35px; }
         .hero-banner .hero-body .container .subtitle span:first-child {
           margin-right: 0; }
         .hero-banner .hero-body .container .subtitle br {
@@ -7144,28 +7140,22 @@ header {
     @media screen and (min-width: 1500px) {
       .hero-banner .hero-body .container .subtitle {
         font-size: 20px;
-        line-height: 30px; } }
-  .hero-banner .hero-body .container .signup-button {
-    border: 2px solid #fff;
-    min-height: 52px;
-    font-size: 14px;
-    font-weight: 500;
+        line-height: 1.4; } }
+  .hero-banner .hero-body .container .button {
     background-color: transparent;
-    padding: 18px 43px 15px 25px; }
-    .hero-banner .hero-body .container .signup-button span {
-      background-color: #EDEDEDD9;
-      transition-duration: .2s; }
-    .hero-banner .hero-body .container .signup-button:hover span {
-      color: #fff !important;
-      background-color: transparent; }
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 30px;
+    height: 54px; }
     @media screen and (min-width: 320px) and (max-width: 767px) {
-      .hero-banner .hero-body .container .signup-button {
+      .hero-banner .hero-body .container .button {
         font-size: 10.25px;
-        padding-top: 12px !important;
-        padding-bottom: 12px !important;
-        min-height: 42px !important;
-        padding-left: 16px !important;
-        padding-right: 26px !important; } }
+        padding-left: 40px !important;
+        padding-right: 45px !important;
+        padding-top: 14px !important;
+        padding-bottom: 11px !important;
+        height: auto;
+        min-height: 40px !important; } }
   @media screen and (min-width: 320px) {
     .hero-banner .hero-body .container {
       padding-top: 20px;
@@ -7252,11 +7242,7 @@ header {
           justify-content: center;
           align-items: center; } }
       .adding-a-button .container .text-content .title {
-        font-weight: 500; }
-        .adding-a-button .container .text-content .title span {
-          background-color: #f7d4d7; }
-          .adding-a-button .container .text-content .title span:first-child {
-            padding-right: 10px; }
+        font-weight: 900; }
         @media screen and (min-width: 320px) {
           .adding-a-button .container .text-content .title {
             font-size: 27.25px;
@@ -7270,15 +7256,10 @@ header {
             font-size: 32px;
             font-size: 45px;
             text-align: left;
-            padding-bottom: 40px;
-            line-height: 55px; } }
+            padding-bottom: 30px; } }
       .adding-a-button .container .text-content .subtitle {
-        font-weight: 500;
+        font-weight: 400;
         color: #445875; }
-        .adding-a-button .container .text-content .subtitle span {
-          background-color: #f7d4d7; }
-          .adding-a-button .container .text-content .subtitle span:not(:last-child) {
-            padding-right: 10px; }
         @media screen and (min-width: 320px) {
           .adding-a-button .container .text-content .subtitle {
             text-align: center;
@@ -7296,6 +7277,7 @@ header {
               display: block; } }
         @media screen and (min-width: 1500px) {
           .adding-a-button .container .text-content .subtitle {
+            margin-bottom: 35px;
             font-size: 17.9px;
             line-height: 30px;
             text-align: left; }
@@ -7304,14 +7286,22 @@ header {
         @media screen and (min-width: 1550px) {
           .adding-a-button .container .text-content .subtitle br {
             display: block; } }
-      @media screen and (min-width: 320px) and (max-width: 767px) {
-        .adding-a-button .container .text-content .button {
-          font-size: 10.25px;
-          padding-top: 12px !important;
-          padding-bottom: 12px !important;
-          min-height: 42px !important;
-          padding-left: 16px !important;
-          padding-right: 26px !important; } }
+      .adding-a-button .container .text-content .button {
+        background-color: transparent;
+        border-color: #FD2F05;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 15px 30px;
+        height: 58px; }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          .adding-a-button .container .text-content .button {
+            font-size: 10.25px;
+            padding-left: 40px !important;
+            padding-right: 45px !important;
+            padding-top: 14px !important;
+            padding-bottom: 11px !important;
+            height: auto;
+            min-height: 40px !important; } }
 
 .embla {
   position: relative;
@@ -7370,10 +7360,7 @@ header {
               padding-left: 100px; } }
           @media screen and (min-width: 1350px) {
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
-              padding-left: 150px; } }
-          @media screen and (min-width: 1450px) {
-            .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner {
-              padding-left: 165px; } }
+              padding-left: 105px; } }
           .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner:after {
             content: '';
             position: absolute;
@@ -7405,32 +7392,35 @@ header {
             align-items: center;
             justify-content: center; }
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
-              margin-bottom: -75px; }
+              margin-bottom: -75px;
+              background-color: transparent;
+              border-color: #fff;
+              font-weight: 400;
+              font-size: 18px;
+              padding: 15px 30px;
+              height: 58px; }
               @media screen and (min-width: 320px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
                   display: none; } }
-              @media screen and (min-width: 768px) and (max-width: 839px) {
+              @media screen and (min-width: 768px) and (max-width: 939px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
                   margin-bottom: -15px;
-                  margin-right: -120px;
-                  display: initial;
-                  font-size: 10.25px;
-                  padding-top: 12px !important;
-                  padding-bottom: 12px !important;
-                  min-height: 42px !important;
-                  padding-left: 16px !important;
-                  padding-right: 26px !important; } }
-              @media screen and (min-width: 840px) {
+                  margin-right: -110px;
+                  display: initial; } }
+              @media screen and (min-width: 940px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay .button {
-                  margin-bottom: -25px;
+                  margin-bottom: -45px;
                   display: initial;
                   margin-right: -20px; } }
             @media screen and (min-width: 320px) {
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
                 width: 86px;
-                top: -60px;
+                top: -65px;
                 right: unset;
                 background-image: url("../assets/svg/review-percent-mobile.svg"); } }
+            @media screen and (min-width: 510px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
+                top: -45px; } }
             @media screen and (min-width: 600px) {
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-percent-overlay {
                 top: 60px;
@@ -7438,44 +7428,50 @@ header {
                 right: 34px;
                 background-image: url("../assets/svg/review-percent.svg"); } }
           .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
-            padding-left: 165px;
             padding-top: 88px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start; }
+            align-items: center; }
             @media screen and (min-width: 320px) {
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
-                padding-left: 0;
-                padding-right: 0;
-                padding-bottom: 30px; } }
+                padding-bottom: 30px;
+                padding-left: 10px;
+                padding-right: 10px; } }
             @media screen and (min-width: 600px) {
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
                 padding-bottom: 60px;
-                padding-top: 60px; } }
+                padding-top: 60px;
+                max-width: 350px; } }
+            @media screen and (min-width: 840px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
+                max-width: 390px; } }
             @media screen and (min-width: 1150px) {
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
                 padding-bottom: 75px;
-                padding-top: 85px; } }
+                padding-top: 85px;
+                max-width: 630px; } }
+            @media screen and (min-width: 1350px) {
+              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content {
+                max-width: 700px; } }
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
               font-weight: 500;
               color: #fff;
               line-height: 1.2;
               text-align: center; }
-              .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text span {
-                background-color: #f7d4d7;
-                padding-right: 10px; }
               @media screen and (min-width: 320px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
-                  font-size: 18px; } }
+                  font-size: 18px; }
+                  .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text br {
+                    display: none; } }
               @media screen and (min-width: 768px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
                   font-size: 24px; } }
-              @media screen and (min-width: 840px) {
+              @media screen and (min-width: 940px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
                   font-size: 32px; } }
               @media screen and (min-width: 1150px) {
                 .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-text {
-                  font-size: 45px; } }
+                  font-size: 50px; } }
             .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author {
               display: flex;
               align-items: center; }
@@ -7497,17 +7493,15 @@ header {
                 @media screen and (min-width: 768px) {
                   .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
                     height: 40px;
-                    width: 40px;
-                    margin-right: 15px; } }
+                    width: 40px; } }
                 @media screen and (min-width: 1150px) {
                   .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author img {
                     width: 62px;
                     height: 62px;
-                    margin-right: 55px; } }
+                    margin-right: 25px; } }
               .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
                 font-weight: 500;
-                color: #fff;
-                background-color: #f7d4d7; }
+                color: #fff; }
                 @media screen and (min-width: 320px) {
                   .embla .embla__viewport .embla__container .embla__slide .embla__slide__inner .card-content .review-author .review-author__name {
                     font-size: 10px; } }
@@ -7670,7 +7664,7 @@ header {
     .get-your-offer .container .text-content {
       min-width: 350px; } }
   .get-your-offer .container .text-content .title {
-    font-weight: 500;
+    font-weight: 900;
     line-height: 1.2;
     margin-bottom: 35px; }
     @media screen and (min-width: 320px) {
@@ -7686,16 +7680,12 @@ header {
         font-size: 45px; }
         .get-your-offer .container .text-content .title .last-break-line {
           display: block; } }
-    .get-your-offer .container .text-content .title span {
-      background-color: #f7d4d7; }
-      .get-your-offer .container .text-content .title span:not(:last-child) {
-        padding-right: 10px; }
-      @media screen and (min-width: 320px) and (max-width: 1149px) {
-        .get-your-offer .container .text-content .title span:last-child {
-          margin-left: -10px; } }
+    @media screen and (min-width: 320px) and (max-width: 1149px) {
+      .get-your-offer .container .text-content .title span:last-child {
+        margin-left: -10px; } }
   .get-your-offer .container .text-content p {
     font-size: 17.9px;
-    font-weight: 500;
+    font-weight: 400;
     color: #445875;
     line-height: 30px; }
     @media screen and (min-width: 320px) {
@@ -7704,10 +7694,6 @@ header {
     @media screen and (min-width: 1150px) {
       .get-your-offer .container .text-content p {
         display: block; } }
-    .get-your-offer .container .text-content p span {
-      background-color: #f7d4d7; }
-      .get-your-offer .container .text-content p span:not(:last-child) {
-        padding-right: 10px; }
   .get-your-offer .container .media-content {
     max-width: 850px; }
     @media screen and (min-width: 320px) {
@@ -7757,11 +7743,9 @@ header {
       font-size: 10px;
       max-width: 197px;
       padding-top: 25px;
-      font-weight: 500;
+      font-weight: 400;
       text-align: center;
       line-height: 18px; }
-      .get-your-offer .container .media-content p span {
-        background-color: #f7d4d7; }
       @media screen and (min-width: 768px) {
         .get-your-offer .container .media-content p {
           font-size: 15px;
@@ -7829,13 +7813,12 @@ header {
             display: block;
             align-self: flex-start; } }
       .bold-promise .container .text-content .title {
-        font-weight: 500;
-        line-height: 1.2; }
+        font-weight: 900;
+        line-height: 1; }
         @media screen and (min-width: 320px) {
           .bold-promise .container .text-content .title {
             font-size: 27.5px;
-            margin-bottom: 10px;
-            margin-left: -40px; }
+            margin-bottom: 10px; }
             .bold-promise .container .text-content .title br {
               display: none; } }
         @media screen and (min-width: 768px) {
@@ -7844,41 +7827,43 @@ header {
         @media screen and (min-width: 1150px) {
           .bold-promise .container .text-content .title {
             margin-bottom: 35px;
-            margin-left: 0;
             align-self: flex-start; }
             .bold-promise .container .text-content .title br {
               display: block; } }
         @media screen and (min-width: 1250px) {
           .bold-promise .container .text-content .title {
             font-size: 45px; } }
-        .bold-promise .container .text-content .title span {
-          background-color: #f7d4d7; }
-          .bold-promise .container .text-content .title span:not(:last-child) {
-            padding-right: 10px; }
-          @media screen and (min-width: 320px) {
-            .bold-promise .container .text-content .title span:last-child {
-              margin-left: -10px; } }
-          @media screen and (min-width: 1150px) {
-            .bold-promise .container .text-content .title span:last-child {
-              margin-left: 0; } }
+        @media screen and (min-width: 320px) {
+          .bold-promise .container .text-content .title span:last-child {
+            margin-left: -10px; } }
+        @media screen and (min-width: 1150px) {
+          .bold-promise .container .text-content .title span:last-child {
+            margin-left: 0; } }
       .bold-promise .container .text-content p {
         font-size: 17.9px;
-        font-weight: 500;
+        font-weight: 400;
         color: #445875;
         line-height: 30px; }
-        .bold-promise .container .text-content p span {
-          background-color: #f7d4d7; }
-          .bold-promise .container .text-content p span:not(:last-child) {
-            padding-right: 10px; }
-      @media screen and (min-width: 320px) and (max-width: 767px) {
-        .bold-promise .container .text-content .button {
-          margin-top: 5px;
-          font-size: 10.25px;
-          padding-top: 12px !important;
-          padding-bottom: 12px !important;
-          min-height: 42px !important;
-          padding-left: 16px !important;
-          padding-right: 26px !important; } }
+      .bold-promise .container .text-content .button {
+        background-color: transparent;
+        border-color: #FD2F05;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 15px 30px;
+        height: 58px;
+        align-self: flex-start; }
+        @media screen and (max-width: 1149px) {
+          .bold-promise .container .text-content .button {
+            align-self: center; } }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          .bold-promise .container .text-content .button {
+            font-size: 10.25px;
+            padding-left: 40px !important;
+            padding-right: 45px !important;
+            padding-top: 14px !important;
+            padding-bottom: 11px !important;
+            height: auto;
+            min-height: 40px !important; } }
     .bold-promise .container .media-content {
       width: 100%; }
       @media screen and (min-width: 320px) {
@@ -7925,20 +7910,17 @@ header {
       .try-it .container .title-content {
         max-width: unset; } }
     .try-it .container .title-content .title {
-      font-weight: 500;
-      background-color: #f7d4d7;
+      font-weight: 900;
       margin-bottom: 10px; }
       @media screen and (min-width: 320px) {
         .try-it .container .title-content .title {
-          font-size: 27.5px;
-          margin-left: -90px; } }
+          font-size: 27.5px; } }
       @media screen and (min-width: 768px) {
         .try-it .container .title-content .title {
           font-size: 32px; } }
       @media screen and (min-width: 1250px) {
         .try-it .container .title-content .title {
-          font-size: 84.5px;
-          margin-left: -200px; } }
+          font-size: 84.5px; } }
     .try-it .container .title-content p {
       font-weight: 500;
       color: #445875; }
@@ -7958,13 +7940,11 @@ header {
           line-height: 25px; }
           .try-it .container .title-content p br {
             display: block; } }
-      .try-it .container .title-content p span {
-        background-color: #f7d4d7; }
-        @media screen and (min-width: 320px) and (max-width: 1149px) {
-          .try-it .container .title-content p span:last-child {
-            margin-left: -10px; } }
-        .try-it .container .title-content p span:not(:last-child) {
-          padding-right: 10px; }
+      @media screen and (min-width: 320px) and (max-width: 1149px) {
+        .try-it .container .title-content p span:last-child {
+          margin-left: -10px; } }
+      .try-it .container .title-content p span:not(:last-child) {
+        padding-right: 10px; }
   .try-it .container .media-content {
     position: relative;
     display: flex;
@@ -8069,15 +8049,23 @@ header {
               .try-it .container .media-content .media-items-list .media-item-form form .field .control input::placeholder, .try-it .container .media-content .media-items-list .media-item-form form .field .control input::-moz-placeholder, .try-it .container .media-content .media-items-list .media-item-form form .field .control input::-webkit-input-placeholder {
                 color: #FD2F05;
                 opacity: .8; }
-      @media screen and (min-width: 320px) and (max-width: 767px) {
-        .try-it .container .media-content .media-items-list .button {
-          margin-top: 5px;
-          font-size: 10.25px;
-          padding-top: 12px !important;
-          padding-bottom: 12px !important;
-          min-height: 42px !important;
-          padding-left: 16px !important;
-          padding-right: 26px !important; } }
+      .try-it .container .media-content .media-items-list .button {
+        font-weight: 500;
+        font-size: 18px;
+        padding: 15px 40px;
+        height: 58px; }
+        .try-it .container .media-content .media-items-list .button.is-outlined {
+          background-color: transparent;
+          border-color: #FD2F05; }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          .try-it .container .media-content .media-items-list .button {
+            font-size: 10.25px;
+            padding-left: 40px !important;
+            padding-right: 45px !important;
+            padding-top: 14px !important;
+            padding-bottom: 11px !important;
+            height: auto;
+            min-height: 40px !important; } }
 
 .hero-contact {
   position: relative; }
@@ -8165,7 +8153,6 @@ header {
                 margin-bottom: 5px; } }
           .hero-contact .hero-body .container form .field.is-grouped .control.control-image-container a {
             color: #fff;
-            background-color: #f7d4d7;
             font-size: 10.5px;
             font-weight: 500;
             transition-duration: .2s; }
@@ -8191,15 +8178,17 @@ header {
           height: 65px;
           margin-left: auto;
           padding-left: 60px !important;
-          padding-right: 60px !important; }
+          padding-right: 60px !important;
+          border-color: #fff;
+          font-weight: 500; }
           @media screen and (min-width: 320px) and (max-width: 767px) {
             .hero-contact .hero-body .container form .field.is-grouped .button {
               margin: 0 auto;
               font-size: 10.25px;
               padding-left: 40px !important;
               padding-right: 45px !important;
-              padding-top: 15px !important;
-              padding-bottom: 7px !important;
+              padding-top: 14px !important;
+              padding-bottom: 11px !important;
               height: auto;
               min-height: 40px !important;
               margin-top: 5px; } }
@@ -8215,7 +8204,6 @@ header {
             flex-direction: row !important; } }
         .hero-contact .hero-body .container form .field .control input,
         .hero-contact .hero-body .container form .field .control textarea {
-          border-width: 2px;
           border-color: #fff;
           background: transparent;
           padding: 18px 20px 18px 20px;
@@ -8260,8 +8248,7 @@ header {
     padding-left: 40px;
     padding-right: 40px; }
     .hero-contact .hero-foot .footer {
-      padding-bottom: 60px;
-      background-color: #FD2F05; }
+      padding-bottom: 60px; }
       .hero-contact .hero-foot .footer .content {
         display: flex;
         justify-content: space-between;
@@ -8276,7 +8263,6 @@ header {
             .hero-contact .hero-foot .footer .content .footer-logo {
               margin-bottom: 20px; } }
           .hero-contact .hero-foot .footer .content .footer-logo span {
-            background-color: #f7d4d7;
             color: #fff;
             font-weight: 500;
             font-size: 19.4px;
@@ -8292,13 +8278,9 @@ header {
           .hero-contact .hero-foot .footer .content .design-by p {
             font-size: 15px;
             font-weight: 500;
-            background-color: #f7d4d7;
             margin: 0; }
             @media screen and (min-width: 320px) and (max-width: 767px) {
               .hero-contact .hero-foot .footer .content .design-by p {
                 font-size: 12.3px; } }
           .hero-contact .hero-foot .footer .content .design-by img {
-            margin-left: 50px; }
-            @media screen and (min-width: 320px) and (max-width: 767px) {
-              .hero-contact .hero-foot .footer .content .design-by img {
-                margin-left: 30px; } }
+            margin-left: 15px; }

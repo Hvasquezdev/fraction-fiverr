@@ -4,6 +4,7 @@
 
 // Importing the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
 
 // Setting up initial variables
 
@@ -94,10 +95,10 @@ header {
 				max-height: 18px;
 				padding-top: 0;
 				padding-bottom: 0;
-				background: #EDEDEDD9;
 				padding: 0;
-				font-size: 9.7px;
+				font-size: 12px;
 				font-weight: 500;
+				text-transform: uppercase;
 				transition-duration: .2s;
 
 				&:not(:last-child) {
@@ -107,27 +108,22 @@ header {
 				&:first-child {
 					margin-left: 55px;
 				}
+
+				&:hover {
+					background-color: transparent !important;
+				}
 			}
 		}
 
 		.navbar-end {
 			.contact-button {
-				border: 2px solid #fff;
-				min-height: 35px;
-				font-size: 9.7px;
-				font-weight: 500;
+				border-width: 2px;
+				border-color: #fff;
+				min-height: 39px;
+				font-size: 12px;
+				font-weight: 400;
 				background-color: transparent;
-				padding: 9.5px 36.7px 6.5px 22.3px;
-
-				span {
-					background-color: #EDEDEDD9;
-					transition-duration: .2s;
-				}
-
-				&:hover span{
-					color: #fff !important;
-					background-color: transparent;
-				}
+				padding: 10px 35px 10px 35px;
 			}
 		}
 	}
@@ -196,13 +192,8 @@ header {
 
 		.container {
 			.title {
-				font-weight: 500;
-				line-height: 1.22;
-
-				span {
-					background: #EDEDEDD9;
-					padding-right: 10px;
-				}
+				font-weight: 900;
+				line-height: 1;
 
 				@media screen and (min-width: 320px) {
 					font-size: 27px;
@@ -225,15 +216,14 @@ header {
 					font-size: 64.5px;
 					padding-bottom: 25px;
 				}
+
+				@media screen and (min-width: 1650px) {
+					font-size: 84.5px;
+				}
 			}
 
 			.subtitle {
-				font-weight: 500;
-
-				span {
-					background: #EDEDEDD9;
-					padding-right: 10px;
-				}
+				font-weight: 400;
 
 				@media screen and (min-width: 320px) {
 					font-size: 10.5px;
@@ -256,6 +246,7 @@ header {
 					font-size: 15.5px;
 					max-width: unset;
 					line-height: 24px;
+					margin-bottom: 35px;
 
 					span {
 						&:first-child {
@@ -274,35 +265,25 @@ header {
 
 				@media screen and (min-width: 1500px) {
 					font-size: 20px;
-					line-height: 30px;
+					line-height: 1.4;
 				}
 			}
 
-			.signup-button {
-				border: 2px solid #fff;
-				min-height: 52px;
-				font-size: 14px;
-				font-weight: 500;
+			.button {
 				background-color: transparent;
-				padding: 18px 43px 15px 25px;
-
-				span {
-					background-color: #EDEDEDD9;
-					transition-duration: .2s;
-				}
-
-				&:hover span{
-					color: #fff !important;
-					background-color: transparent;
-				}
+				font-weight: 400;
+				font-size: 14px;
+				padding: 15px 30px;
+				height: 54px;
 
 				@media screen and (min-width: 320px) and (max-width: 767px) {
 					font-size: 10.25px;
-					padding-top: 12px !important;
-					padding-bottom: 12px !important;
-					min-height: 42px !important;
-					padding-left: 16px !important;
-					padding-right: 26px !important;
+					padding-left: 40px !important;
+					padding-right: 45px !important;
+					padding-top: 14px !important;
+					padding-bottom: 11px !important;
+					height: auto;
+					min-height: 40px !important;
 				}
 			}
 
@@ -419,15 +400,7 @@ header {
 			}
 
 			.title {
-				font-weight: 500;
-
-				span {
-					background-color: #f7d4d7;
-					
-					&:first-child {
-						padding-right: 10px;
-					}
-				}
+				font-weight: 900;
 
 				@media screen and (min-width: 320px) {
 					font-size: 27.25px;
@@ -443,22 +416,13 @@ header {
 					font-size: 32px;
 					font-size: 45px;
 					text-align: left;
-					padding-bottom: 40px;
-					line-height: 55px;
+					padding-bottom: 30px;
 				}
 			}
 
 			.subtitle {
-				font-weight: 500;
+				font-weight: 400;
 				color: #445875;
-
-				span {
-					background-color: #f7d4d7;
-
-					&:not(:last-child) {
-						padding-right: 10px;
-					}
-				}
 
 				@media screen and (min-width: 320px) {
 					text-align: center;
@@ -482,6 +446,7 @@ header {
 				}
 
 				@media screen and (min-width: 1500px) {
+					margin-bottom: 35px;
 					font-size: 17.9px;
 					line-height: 30px;
 					text-align: left;
@@ -499,13 +464,21 @@ header {
 			}
 
 			.button {
+				background-color: transparent;
+				border-color: $primary;
+				font-weight: 500;
+				font-size: 18px;
+				padding: 15px 30px;
+				height: 58px;
+
 				@media screen and (min-width: 320px) and (max-width: 767px) {
 					font-size: 10.25px;
-					padding-top: 12px !important;
-					padding-bottom: 12px !important;
-					min-height: 42px !important;
-					padding-left: 16px !important;
-					padding-right: 26px !important;
+					padding-left: 40px !important;
+					padding-right: 45px !important;
+					padding-top: 14px !important;
+					padding-bottom: 11px !important;
+					height: auto;
+					min-height: 40px !important;
 				}
 			}
 		}
@@ -590,11 +563,7 @@ header {
 					}
 
 					@media screen and (min-width: 1350px) {
-						padding-left: 150px;
-					}
-
-					@media screen and (min-width: 1450px) {
-						padding-left: 165px;
+						padding-left: 105px;
 					}
 				
 					&:after {
@@ -634,25 +603,25 @@ header {
 				
 						.button {
 							margin-bottom: -75px;
+							background-color: transparent;
+							border-color: #fff;
+							font-weight: 400;
+							font-size: 18px;
+							padding: 15px 30px;
+							height: 58px;
 
 							@media screen and (min-width: 320px) {
 								display: none;
 							}
 
-							@media screen and (min-width: 768px) and (max-width: 839px) {
+							@media screen and (min-width: 768px) and (max-width: 939px) {
 								margin-bottom: -15px;
-								margin-right: -120px;
+								margin-right: -110px;
 								display: initial;
-								font-size: 10.25px;
-								padding-top: 12px !important;
-								padding-bottom: 12px !important;
-								min-height: 42px !important;
-								padding-left: 16px !important;
-								padding-right: 26px !important;
 							}
 
-							@media screen and (min-width: 840px) {
-								margin-bottom: -25px;
+							@media screen and (min-width: 940px) {
+								margin-bottom: -45px;
 								display: initial;
 								margin-right: -20px;
 							}
@@ -660,9 +629,13 @@ header {
 
 						@media screen and (min-width: 320px) {
 							width: 86px;
-							top: -60px;
+							top: -65px;
 							right: unset;
 							background-image: url('../assets/svg/review-percent-mobile.svg');
+						}
+
+						@media screen and (min-width: 510px) {
+							top: -45px;
 						}
 
 						@media screen and (min-width: 600px) {
@@ -674,26 +647,35 @@ header {
 					}
 				
 					.card-content {
-						padding-left: 165px;
 						padding-top: 88px;
 						display: flex;
 						flex-direction: column;
-						align-items: flex-start;
+						align-items: center;
 
 						@media screen and (min-width: 320px) {
-							padding-left: 0;
-							padding-right: 0;
 							padding-bottom: 30px;
+							padding-left: 10px;
+							padding-right: 10px;
 						}
 
 						@media screen and (min-width: 600px) {
 							padding-bottom: 60px;
 							padding-top: 60px;
+							max-width: 350px;
+						}
+
+						@media screen and (min-width: 840px) {
+							max-width: 390px;
 						}
 
 						@media screen and (min-width: 1150px) {
 							padding-bottom: 75px;
 							padding-top: 85px;
+							max-width: 630px;
+						}
+
+						@media screen and (min-width: 1350px) {
+							max-width: 700px;
 						}
 				
 						.review-text {
@@ -701,26 +683,25 @@ header {
 							color: #fff;
 							line-height: 1.2;
 							text-align: center;
-				
-							span {
-								background-color: #f7d4d7;
-								padding-right: 10px;
-							}
 
 							@media screen and (min-width: 320px) {
 								font-size: 18px;
+
+								br {
+									display: none;
+								}
 							}
 
 							@media screen and (min-width: 768px) {
 								font-size: 24px;
 							}
 
-							@media screen and (min-width: 840px) {
+							@media screen and (min-width: 940px) {
 								font-size: 32px;
 							}
 
 							@media screen and (min-width: 1150px) {
-								font-size: 45px;
+								font-size: 50px;
 							}
 						}
 				
@@ -750,20 +731,18 @@ header {
 								@media screen and (min-width: 768px) {
 									height: 40px;
 									width: 40px;
-									margin-right: 15px;
 								}
 
 								@media screen and (min-width: 1150px) {
 									width: 62px;
 									height: 62px;
-									margin-right: 55px;
+									margin-right: 25px;
 								}
 							}
 				
 							.review-author__name {
 								font-weight: 500;
 								color: #fff;
-								background-color: #f7d4d7;
 
 								@media screen and (min-width: 320px) {
 									font-size: 10px;
@@ -985,7 +964,7 @@ header {
 			}
 
 			.title {
-				font-weight: 500;
+				font-weight: 900;
 				line-height: 1.2;
 				margin-bottom: 35px;
 
@@ -1009,12 +988,6 @@ header {
 				}
 
 				span {
-					background-color: #f7d4d7;
-
-					&:not(:last-child) {
-						padding-right: 10px;
-					}
-
 					@media screen and (min-width: 320px) and (max-width: 1149px) {
 						&:last-child {
 							margin-left: -10px;
@@ -1025,7 +998,7 @@ header {
 
 			p {
 				font-size: 17.9px;
-				font-weight: 500;
+				font-weight: 400;
 				color: #445875;
 				line-height: 30px;
 
@@ -1035,14 +1008,6 @@ header {
 
 				@media screen and (min-width: 1150px) {
 					display: block;
-				}
-
-				span {
-					background-color: #f7d4d7;
-
-					&:not(:last-child) {
-						padding-right: 10px;
-					}
 				}
 			}
 		}
@@ -1114,13 +1079,9 @@ header {
 				font-size: 10px;
 				max-width: 197px;
 				padding-top: 25px;
-				font-weight: 500;
+				font-weight: 400;
 				text-align: center;
 				line-height: 18px;
-
-				span {
-					background-color: #f7d4d7;
-				}
 
 				@media screen and (min-width: 768px) {
 					font-size: 15px;
@@ -1210,13 +1171,12 @@ header {
 			}
 
 			.title {
-				font-weight: 500;
-				line-height: 1.2;
+				font-weight: 900;
+				line-height: 1;
 
 				@media screen and (min-width: 320px) {
 					font-size: 27.5px;
 					margin-bottom: 10px;
-					margin-left: -40px;
 
 					br {
 						display: none;
@@ -1229,7 +1189,6 @@ header {
 
 				@media screen and (min-width: 1150px) {
 					margin-bottom: 35px;
-					margin-left: 0;
 					align-self: flex-start;
 
 					br {
@@ -1242,12 +1201,6 @@ header {
 				}
 
 				span {
-					background-color: #f7d4d7;
-
-					&:not(:last-child) {
-						padding-right: 10px;
-					}
-
 					@media screen and (min-width: 320px) {
 						&:last-child {
 							margin-left: -10px;
@@ -1264,28 +1217,32 @@ header {
 
 			p {
 				font-size: 17.9px;
-				font-weight: 500;
+				font-weight: 400;
 				color: #445875;
 				line-height: 30px;
-
-				span {
-					background-color: #f7d4d7;
-
-					&:not(:last-child) {
-						padding-right: 10px;
-					}
-				}
 			}
 
-			.button {	
+			.button {
+				background-color: transparent;
+				border-color: $primary;
+				font-weight: 500;
+				font-size: 18px;
+				padding: 15px 30px;
+				height: 58px;
+				align-self: flex-start;
+
+				@media screen and (max-width: 1149px) {
+					align-self: center;
+				}
+
 				@media screen and (min-width: 320px) and (max-width: 767px) {
-					margin-top: 5px;
 					font-size: 10.25px;
-					padding-top: 12px !important;
-					padding-bottom: 12px !important;
-					min-height: 42px !important;
-					padding-left: 16px !important;
-					padding-right: 26px !important;
+					padding-left: 40px !important;
+					padding-right: 45px !important;
+					padding-top: 14px !important;
+					padding-bottom: 11px !important;
+					height: auto;
+					min-height: 40px !important;
 				}
 			}
 		}
@@ -1350,13 +1307,11 @@ header {
 			}
 
 			.title {
-				font-weight: 500;
-				background-color: #f7d4d7;
+				font-weight: 900;
 				margin-bottom: 10px;
 
 				@media screen and (min-width: 320px) {
 					font-size: 27.5px;
-					margin-left: -90px;
 				}
 
 				@media screen and (min-width: 768px) {
@@ -1365,7 +1320,6 @@ header {
 
 				@media screen and (min-width: 1250px) {
 					font-size: 84.5px;
-					margin-left: -200px;
 				}
 			}
 
@@ -1397,8 +1351,6 @@ header {
 				}
 
 				span {
-					background-color: #f7d4d7;
-
 					@media screen and (min-width: 320px) and (max-width: 1149px) {
 						&:last-child {
 							margin-left: -10px;
@@ -1564,15 +1516,25 @@ header {
 					}
 				}
 	
-				.button {	
+				.button {
+					font-weight: 500;
+					font-size: 18px;
+					padding: 15px 40px;
+					height: 58px;
+
+					&.is-outlined {
+						background-color: transparent;
+						border-color: $primary;
+					}
+
 					@media screen and (min-width: 320px) and (max-width: 767px) {
-						margin-top: 5px;
 						font-size: 10.25px;
-						padding-top: 12px !important;
-						padding-bottom: 12px !important;
-						min-height: 42px !important;
-						padding-left: 16px !important;
-						padding-right: 26px !important;
+						padding-left: 40px !important;
+						padding-right: 45px !important;
+						padding-top: 14px !important;
+						padding-bottom: 11px !important;
+						height: auto;
+						min-height: 40px !important;
 					}
 				}
 			}
@@ -1698,7 +1660,6 @@ header {
 
 								a {
 									color: #fff;
-									background-color: #f7d4d7;
 									font-size: 10.5px;
 									font-weight: 500;
 									transition-duration: .2s;
@@ -1739,14 +1700,16 @@ header {
 							margin-left: auto;
 							padding-left: 60px !important;
 							padding-right: 60px !important;
+							border-color: #fff;
+							font-weight: 500;
 
 							@media screen and (min-width: 320px) and (max-width: 767px) {
 								margin: 0 auto;
 								font-size: 10.25px;
 								padding-left: 40px !important;
 								padding-right: 45px !important;
-								padding-top: 15px !important;
-								padding-bottom: 7px !important;
+								padding-top: 14px !important;
+								padding-bottom: 11px !important;
 								height: auto;
 								min-height: 40px !important;
 								margin-top: 5px;
@@ -1771,7 +1734,6 @@ header {
 					.control {
 						input,
 						textarea {
-							border-width: 2px;
 							border-color: #fff;
 							background: transparent;
 							padding: 18px 20px 18px 20px;
@@ -1839,7 +1801,6 @@ header {
 
 		.footer {
 			padding-bottom: 60px;
-			background-color: $primary;
 
 			.content {
 				display: flex;
@@ -1859,7 +1820,6 @@ header {
 					}
 
 					span {
-						background-color: #f7d4d7;
 						color: #fff;
 						font-weight: 500;
 						font-size: 19.4px;
@@ -1883,7 +1843,6 @@ header {
 					p {
 						font-size: 15px;
 						font-weight: 500;
-						background-color: #f7d4d7;
 						margin: 0;
 
 						@media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1892,11 +1851,7 @@ header {
 					}
 
 					img {
-						margin-left: 50px;
-
-						@media screen and (min-width: 320px) and (max-width: 767px) {
-							margin-left: 30px;
-						}
+						margin-left: 15px;
 					}
 				}
 			}
